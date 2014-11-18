@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cus_acfcl_rl_ScreenParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cus_activity_bgcolor_grey" >
+
+    <LinearLayout
+        android:id="@+id/cus_acfcl_ll_RetryWapper1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/cus_acfcl_ll_HeaderWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkgreen"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/cus_acfcl_iv_LiveChatLogo"
+                android:layout_width="@dimen/cus_acfcl_iv_LiveChatLogo_width"
+                android:layout_height="@dimen/cus_acfcl_iv_LiveChatLogo_height" />
+
+            <TextView
+                android:id="@+id/cus_acfcl_tv_LiveChat"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/cus_acfcl_tv_LiveChat_height"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="Live Support Chat"
+                android:textColor="@color/cus_whitet"
+                android:textSize="@dimen/cus_acfcl_tv_LiveChat_textsize" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cus_acfcl_iv_retry"
+            android:layout_width="@dimen/cus_acfcl_iv_retry_width"
+            android:layout_height="@dimen/cus_acfcl_iv_retry_height"
+            android:layout_marginTop="@dimen/cus_acfcl_iv_retry_width"
+            android:background="@drawable/cus_selector_acfcl_retry_grey" />
+
+        <TextView
+            android:id="@+id/cus_acfcl_tv_ErrorTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/cus_acfcl_tv_ErrorTxt_paddingLeft"
+            android:paddingRight="@dimen/cus_acfcl_tv_ErrorTxt_paddingRight"
+            android:text="No Internet Connection Found."
+            android:textColor="#000"
+            android:textSize="@dimen/cus_acfcl_tv_ErrorTxt_textSize" />
+
+        <TextView
+            android:id="@+id/cus_acfcl_tv_ErrorTxt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/cus_acfcl_tv_ErrorTxt2_paddingLeft"
+            android:paddingRight="@dimen/cus_acfcl_tv_ErrorTxt2_paddingRight"
+            android:text="Please connect to internet and press refresh icon above."
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cus_acfcl_ll_PlaceHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cus_activity_bgcolor_grey"
+        android:orientation="vertical"
+        android:visibility="visible" >
+    </LinearLayout>
+
+</RelativeLayout>

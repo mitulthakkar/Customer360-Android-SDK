@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cus_actfctl_rl_screenparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cus_activity_bgcolor_grey"
+    android:orientation="vertical"
+    android:padding="@dimen/cus_actbar_tittle_textsize" >
+
+    <ScrollView
+        android:id="@+id/cus_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/cus_actfctl_ll_attachmentWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/cus_actfctl_et_ticketText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cus_edit_text_holo_light"
+                android:gravity="top"
+                android:hint="What&apos;s on your mind ?"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/cus_actfctl_et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cus_actfctl_et_ticketText"
+                android:layout_marginTop="@dimen/cus_actfctl_et_name_marginTop"
+                android:background="@drawable/cus_edit_text_holo_light"
+                android:gravity="top"
+                android:hint="name"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/cus_actfctl_et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cus_actfctl_et_name"
+                android:layout_marginTop="@dimen/cus_actfctl_et_email_marginTop"
+                android:background="@drawable/cus_edit_text_holo_light"
+                android:gravity="top"
+                android:hint="email"
+                android:imeActionLabel="Done"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:text="" />
+
+            <View
+                android:id="@+id/cus_actfctl_v_Divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cus_actfctl_v_Divider_height"
+                android:layout_marginTop="@dimen/cus_actfctl_v_Divider_marginTop"
+                android:background="#C8C8C8"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/cus_actfctl_AttachmentplaceHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cus_actfctl_btn_AttachImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cus_actfctl_btn_AttachImage_margin"
+                android:background="@drawable/cus_selector_act_btn_submit_grey"
+                android:padding="@dimen/cus_actfctl_btn_AttachImage_padding"
+                android:text="Attach Image"
+                android:textColor="#fff"
+                android:textSize="@dimen/cus_actfctl_btn_AttachImage_textSize"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/cus_actfctl_btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/cus_actfctl_btn_submit_margin"
+                android:background="@drawable/cus_selector_act_btn_submit_grey"
+                android:padding="@dimen/cus_actfctl_btn_submit_padding"
+                android:text="Submit"
+                android:textColor="#fff"
+                android:textSize="@dimen/cus_actfctl_btn_submit_textSize" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

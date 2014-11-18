@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cus_atlftl_rl_screenparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cus_activity_bgcolor_grey"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/cus_atlftl_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cus_atlftl_tv_CreateTicket"
+        android:visibility="visible" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/cus_atlftl_ll_NoItemsFoundWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/cus_atlftl_iv_NewTicket"
+            android:layout_width="@dimen/cus_atlftl_iv_NewTicket_layout_width"
+            android:layout_height="@dimen/cus_atlftl_iv_NewTicket_layout_height"
+            android:src="@drawable/cus_action_ticket_plus_light" />
+
+        <TextView
+            android:id="@+id/cus_atlftl_tv_NoItemsFoundText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Create a new ticket "
+            android:textColor="@color/cus_blackTranslucent"
+            android:textSize="@dimen/cus_atlftl_tv_NoItemsFoundText_textSize" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/cus_atlftl_rl_RetryWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cus_activity_bgcolor_grey"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/cus_atlftl_ll_RetryWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/cus_atlftl_iv_retry"
+                android:layout_width="@dimen/cus_atlftl_iv_retry_layout_width"
+                android:layout_height="@dimen/cus_atlftl_iv_retry_layout_height"
+                android:src="@drawable/cus_selector_acfcl_retry_grey" />
+
+            <TextView
+                android:id="@+id/cus_atlftl_tv_retry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Retry"
+                android:textColor="#000"
+                android:textSize="@dimen/cus_atlftl_tv_retry_textSize" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cus_atlftl_tv_CreateTicket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cus_activity_bgcolor_grey"
+        android:gravity="center"
+        android:padding="@dimen/cus_atlftl_tv_CreateTicket_padding"
+        android:text="Create A New Ticket"
+        android:textColor="#000"
+        android:textSize="@dimen/cus_atlftl_tv_CreateTicket_textSize"
+        android:visibility="gone" />
+
+</RelativeLayout>

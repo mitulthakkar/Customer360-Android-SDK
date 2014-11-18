@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cusab_rl_actionbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cus_actbar_height"
+    android:background="@color/cus_actbar_bg_holo_light"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/cusab_ll_actionbar_contentHodler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/cusab_ll_actionbar_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cus_selector_actionbar_default"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/cusab_ll_actionbar_home_paddingRight" >
+
+                <ImageView
+                    android:id="@+id/cusab_iv_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginRight="@dimen/cusab_iv_up_marginRight"
+                    android:src="@drawable/cus_ic_ab_back_holo_light"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/cusab_iv_logo"
+                    android:layout_width="@dimen/cus_actbar_height"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/cus_actbar_padding_default"
+                    android:paddingTop="@dimen/cus_actbar_padding_default"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/cusab_tv_tittle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/cus_actbar_padding_default"
+                    android:paddingTop="@dimen/cus_actbar_padding_default"
+                    android:text="CCAvenue"
+                    android:textColor="@color/cus_actbar_txtcolor_holo_light"
+                    android:textSize="@dimen/cus_actbar_tittle_textsize" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cus_divider_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/cus__actionbar_shadow" />
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cus_atdcftdcemt_ll_attachmentWrapper"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/cus_atdcftdcemt_ll_contentWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/cus_atdcftdcemt_v_emptyspace"
+            android:layout_width="@dimen/cus_atdcftdcemt_v_emptyspace_layout_width"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/cus_atdcftdcemt_ll_contentWrapper2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/cus_atdcftdcemt_ll_contentWrapper2_layout_margin"
+            android:layout_weight="1"
+            android:background="@drawable/cus_round_shape_red"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/cus_atdcftdcemt_ll_contentWrapper2_padding" >
+
+            <LinearLayout
+                android:id="@+id/cus_atdcftdcemt_ll_contentWrapper3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/cus_atdcftdcemt_tv_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Miley Cyrus"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/cus_atdcftdcemt_tv_Name_textSize" />
+
+                <TextView
+                    android:id="@+id/cus_atdcftdcemt_tv_Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cus_atdcftdcemt_tv_Text_layout_marginTop"
+                    android:layout_weight="1"
+                    android:text="sample Ticket Tittle text"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/cus_atdcftdcemt_tv_Text_textSize" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/cus_atdcftdcemt_iv_Icon"
+                android:layout_width="@dimen/cus_atdcftdcemt_iv_Icon_layout_width"
+                android:layout_height="@dimen/cus_atdcftdcemt_iv_Icon_layout_height"
+                android:layout_marginRight="@dimen/cus_atdcftdcemt_iv_Icon_layout_marginRight"
+                android:src="@drawable/cus_agent_icon" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

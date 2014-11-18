@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="cus_actbar_bg_holo_dark">#222222</color>
+    <color name="cus_actbar_bg_holo_light">#fff3f3f3</color>
+    <color name="cus_actbar_txtcolor_holo_light">#000</color>
+    <color name="cus_actbar_txtcolor_holo_dark">#fff</color>
+    <color name="cus_blackTranslucent">#8000</color>
+    <color name="cus_Transpaprent">#00000000</color>
+    <color name="cus_whitet">#fff</color>
+    <color name="cus_white_translucent">#8fff</color>
+    <color name="cus_activity_bgcolor_grey">#EEEEEE</color>
+
+    <!-- actl -->
+    <color name="cus_actl_textcolor_grey">#979797</color>
+    <color name="cus_roundshape_grey">#D1D1D1</color>
+    <color name="cus_actl_btn_submit_grey_normal">#585858</color>
+    <color name="cus_actl_btn_submit_grey_selected">#7E7B7B</color>
+
+    <!-- fragThanyou -->
+    <color name="cus_thankyou_info_bg_grey">#F5F5F5</color>
+
+    <!-- to be deleted colors .. temp ...!! -->
+
+    <color name="lightblue">#00BBF0</color>
+    <color name="black">#000000</color>
+    <color name="darkgreen">#188C2B</color>
+    <color name="darkishgrey">#696565</color>
+    <color name="purple">#43407B</color>
+
+    <!-- atdcftdc -->
+    <color name="cus_atdcftdc_red">#CC0000</color>
+
+</resources>

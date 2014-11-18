@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">cus360InAppWiget</string>
+
+    <!-- Error Msgs -->
+    <string name="cus_Error_NoInternetAvail">Please check your internet connections and try again .</string>
+
+    <!-- GCM OTA PushNotification Host App PackageName -->
+    <string name="cus_host_packagename">your_package_name</string>
+
+</resources>
