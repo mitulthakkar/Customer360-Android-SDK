@@ -18,3 +18,18 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+-verbose
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontwarn com.google.**.R
+-dontwarn com.google.**.R$*
+-dontnote
+
+-keep public class cus360.inapp.** {
+    public protected *;
+}
+
+-keep class * extends java.util.ListResourceBundle {
+    protected Object[][] getContents();
+}

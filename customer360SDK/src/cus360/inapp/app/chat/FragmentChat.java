@@ -10,6 +10,7 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnCancelListener;
 import android.graphics.Bitmap;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.KeyEvent;
@@ -89,26 +90,31 @@ public class FragmentChat extends Fragment implements OnClickListener, Observer 
 
 	public void init(View v) {
 
-		mCd = new ConnectionDetector(getActivity());
-		if (mCd.isConnectingToInternet()) {
-			setUpWebView();
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+			mCd = new ConnectionDetector(getActivity());
+			if (mCd.isConnectingToInternet()) {
+				setUpWebView();
+			} else {
+
+				// HomerAlertBoxUtils
+				// .getAlertDialogBox(getActivity(),
+				// "Please check your internet connection , please try again.")
+				// .show();
+
+				showRetryView(
+						"No Internet Connection ",
+						"Please check your internet connection , and click on the above refresh icon to  try again.");
+
+			}
 		} else {
-
-			// HomerAlertBoxUtils
-			// .getAlertDialogBox(getActivity(),
-			// "Please check your internet connection , please try again.")
-			// .show();
-
-			showRetryView(
-					"No Internet Connection ",
-					"Please check your internet connection , and click on the above refresh icon to  try again.");
-
+			showChatNotSupportedInYourPhoneView();
 		}
 	}
 
 	public void showRetryView(String ErrorTxt, String ErrorTxt2) {
 		mLlWebViewHolder.setVisibility(View.GONE);
 		mLlRetryWrapper.setVisibility(View.VISIBLE);
+		mIvRetry.setVisibility(View.VISIBLE);
 		if (mTvErrorText != null) {
 			mTvErrorText.setText(ErrorTxt);
 		}
@@ -121,6 +127,19 @@ public class FragmentChat extends Fragment implements OnClickListener, Observer 
 		mLlRetryWrapper.setVisibility(View.GONE);
 		mLlWebViewHolder.setVisibility(View.VISIBLE);
 
+	}
+
+	public void showChatNotSupportedInYourPhoneView() {
+		mLlWebViewHolder.setVisibility(View.GONE);
+		mLlRetryWrapper.setVisibility(View.VISIBLE);
+		mIvRetry.setVisibility(View.GONE);
+		if (mTvErrorText != null) {
+			mTvErrorText.setText("OPPS!!");
+		}
+		if (mTvErrorText2 != null) {
+			mTvErrorText2
+					.setText("Sorry Chat is not supported on android versions that came before Ice Cream Sandwhich (Android 4.0)");
+		}
 	}
 
 	public void setUpWebView() {

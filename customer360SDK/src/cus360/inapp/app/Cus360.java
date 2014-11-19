@@ -17,7 +17,6 @@ import android.webkit.WebView;
 import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 import cus360.inapp.app.chat.ActivityChat;
-import cus360.inapp.app.chat.WebAppInterface;
 import cus360.inapp.app.ticket.ticketlisting.ActivityTicketListing;
 import cus360.inapp.base.ActivityCustomerBase;
 import cus360.inapp.base.HomerLibs.HomerLogger;
@@ -324,15 +323,19 @@ public class Cus360 {
 		webSettings.setUseWideViewPort(true);
 		webSettings.setLoadWithOverviewMode(true);
 
-		WebAppInterface mWebAppInterface = new WebAppInterface(context);
+		// WebAppInterface mWebAppInterface = new WebAppInterface(context);
 
-		myWebView.addJavascriptInterface(mWebAppInterface, "Android");
+		// myWebView.addJavascriptInterface(mWebAppInterface, "Android");
 		// mWebAppInterface.addObserver(this);
 
-		myWebView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-		if (Build.VERSION.SDK_INT >= 11)
-			webSettings.setDisplayZoomControls(false);
-
+		if (Build.VERSION.SDK_INT >= 11) {
+			try {
+				webSettings.setDisplayZoomControls(false);
+				myWebView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 		myWebView.loadUrl(getmStrChatUrl(context));
 		HomerLogger.d("chaturl ===" + getmStrChatUrl(context));
 	}
