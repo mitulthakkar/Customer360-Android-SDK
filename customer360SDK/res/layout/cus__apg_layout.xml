@@ -9,7 +9,6 @@
         android:id="@+id/apglc_JazzyViewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/apglc_Iv_Ad"
-        android:layout_below="@+id/apglc_PagerSliddingTabStrip" />
+        />
 
 </RelativeLayout>
