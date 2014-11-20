@@ -30,5 +30,6 @@
 
     <!-- atdcftdc -->
     <color name="cus_atdcftdc_red">#CC0000</color>
+    <color name="cus_atdcftdc_bubble_default">#2B3B61</color>
 
 </resources>

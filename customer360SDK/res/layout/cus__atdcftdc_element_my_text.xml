@@ -20,41 +20,78 @@
             android:layout_weight="1"
             android:background="@drawable/cus_round_shape_default"
             android:gravity="center_vertical"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:padding="@dimen/cus_atdcftdcemt_ll_contentWrapper2_padding" >
 
-            <ImageView
-                android:id="@+id/cus_atdcftdcemt_iv_Icon"
-                android:layout_width="@dimen/cus_atdcftdcemt_iv_Icon_layout_width"
-                android:layout_height="@dimen/cus_atdcftdcemt_iv_Icon_layout_height"
-                android:layout_marginRight="@dimen/cus_atdcftdcemt_iv_Icon_layout_marginRight"
-                android:src="@drawable/cus_consumer_icon" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="#C8C8C8"
+                android:visibility="gone" />
 
             <LinearLayout
-                android:id="@+id/cus_atdcftdcemt_ll_contentWrapper3"
+                android:id="@+id/cus_atdcftdcemt_ll_contentWrapper4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/cus_round_shape_default"
                 android:gravity="center_vertical"
-                android:orientation="vertical" >
+                android:orientation="horizontal" >
 
-                <TextView
-                    android:id="@+id/cus_atdcftdcemt_tv_Name"
+                <ImageView
+                    android:id="@+id/cus_atdcftdcemt_iv_Icon"
+                    android:layout_width="@dimen/cus_atdcftdcemt_iv_Icon_layout_width"
+                    android:layout_height="@dimen/cus_atdcftdcemt_iv_Icon_layout_height"
+                    android:layout_marginRight="@dimen/cus_atdcftdcemt_iv_Icon_layout_marginRight"
+                    android:src="@drawable/cus_consumer_icon" />
+
+                <LinearLayout
+                    android:id="@+id/cus_atdcftdcemt_ll_contentWrapper3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Miley Cyrus"
-                    android:textColor="#000"
-                    android:textSize="@dimen/cus_atdcftdcemt_tv_Name_textSize" />
-
-                <TextView
-                    android:id="@+id/cus_atdcftdcemt_tv_Text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/cus_atdcftdcemt_tv_Text_layout_marginTop"
                     android:layout_weight="1"
-                    android:text="sample Ticket Tittle text"
-                    android:textColor="#000"
-                    android:textSize="@dimen/cus_atdcftdcemt_tv_Text_textSize" />
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/cus_atdcftdcemt_tv_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Miley Cyrus"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/cus_atdcftdcemt_tv_Name_textSize" />
+
+                    <TextView
+                        android:id="@+id/cus_atdcftdcemt_tv_Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/cus_atdcftdcemt_tv_Text_layout_marginTop"
+                        android:layout_weight="1"
+                        android:text="sample Ticket Tittle text"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/cus_atdcftdcemt_tv_Text_textSize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#C8C8C8"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/cus_atdcftdcemt_ll_PlaceHolerAttachments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/cus_round_shape_default"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <include layout="@layout/cus__atdcftdc_element_attachment" />
             </LinearLayout>
         </LinearLayout>
 

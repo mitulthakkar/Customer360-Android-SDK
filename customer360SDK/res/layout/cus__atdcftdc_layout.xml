@@ -9,9 +9,8 @@
     <ScrollView
         android:id="@+id/cus_atdcftdc_sv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/cus_atdcftdc_v_divided"
-        android:fillViewport="true" >
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cus_atdcftdc_v_divided" >
 
         <LinearLayout
             android:id="@+id/cus_atdcftdc_ll_PlaceHolderConvi"
@@ -65,25 +64,28 @@
     <LinearLayout
         android:id="@+id/cus_atdcftdc_ll_InputWrapper"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/cus_atdcftdc_ll_InputWrapper_layout_height"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="#EEEEEE"
-        android:orientation="horizontal" >
+        android:orientation="horizontal" 
+        android:gravity="center_vertical">
 
         <EditText
             android:id="@+id/cus_atdcftdc_et_Input"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#EEEEEE"
             android:hint="Type Message ..."
+            android:maxLines="4"
+            android:minHeight="@dimen/cus_atdcftdc_ll_InputWrapper_layout_height"
             android:padding="@dimen/cus_atdcftdc_et_Input_padding"
             android:textColor="#000" />
 
         <ImageView
             android:id="@+id/cus_atdcftdc_iv_SendBtn"
             android:layout_width="@dimen/cus_atdcftdc_iv_SendBtn_layout_width"
-            android:layout_height="match_parent"
+            android:layout_height="@dimen/cus_atdcftdc_ll_InputWrapper_layout_height"
             android:background="#EEEEEE"
             android:padding="10dp"
             android:src="@drawable/cus_sendbtn" />
