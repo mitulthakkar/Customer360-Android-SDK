@@ -30,7 +30,7 @@
                 android:layout_below="@+id/cus_ftyl_iv_tickmark"
                 android:layout_marginTop="@dimen/cus_ftyl_tv_ThankYouText_layout_marginTop"
                 android:gravity="center"
-                android:text="Thank You"
+                android:text="@string/cus_ThankYou"
                 android:textColor="@color/cus_actl_textcolor_grey"
                 android:textSize="@dimen/cus_ftyl_tv_ThankYouText_textSize" />
 
@@ -83,7 +83,7 @@
                 android:layout_marginTop="@dimen/cus_ftyl_btn_Close_layout_marginTop"
                 android:background="@drawable/cus_selector_act_btn_submit_grey"
                 android:padding="@dimen/cus_ftyl_btn_Close_layout_padding"
-                android:text="Close"
+                android:text="@string/cus_Close"
                 android:textColor="@color/cus_whitet" />
         </RelativeLayout>
     </ScrollView>

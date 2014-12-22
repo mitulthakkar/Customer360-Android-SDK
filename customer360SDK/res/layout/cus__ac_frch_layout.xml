@@ -31,7 +31,7 @@
                 android:layout_height="@dimen/cus_acfcl_tv_LiveChat_height"
                 android:layout_marginLeft="10dp"
                 android:gravity="center_vertical"
-                android:text="Live Support Chat"
+                android:text="@string/cus_LiveSupportChat"
                 android:textColor="@color/cus_whitet"
                 android:textSize="@dimen/cus_acfcl_tv_LiveChat_textsize" />
         </LinearLayout>
@@ -50,7 +50,7 @@
             android:gravity="center"
             android:paddingLeft="@dimen/cus_acfcl_tv_ErrorTxt_paddingLeft"
             android:paddingRight="@dimen/cus_acfcl_tv_ErrorTxt_paddingRight"
-            android:text="No Internet Connection Found."
+            android:text="@string/cus_NoInternetConnectionFound."
             android:textColor="#000"
             android:textSize="@dimen/cus_acfcl_tv_ErrorTxt_textSize" />
 
@@ -61,7 +61,7 @@
             android:gravity="center"
             android:paddingLeft="@dimen/cus_acfcl_tv_ErrorTxt2_paddingLeft"
             android:paddingRight="@dimen/cus_acfcl_tv_ErrorTxt2_paddingRight"
-            android:text="Please connect to internet and press refresh icon above."
+            android:text="@string/cus_PleaseConnectToInternetAndPressRefreshIconAbove"
             android:textColor="#000" />
     </LinearLayout>
 

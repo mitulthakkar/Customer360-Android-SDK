@@ -41,7 +41,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/cus_round_shape_cusblue"
                 android:gravity="center_vertical"
                 android:orientation="horizontal" >
 
@@ -68,7 +67,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/cus_atdcftdcemt_tv_Text_layout_marginTop"
                         android:layout_weight="1"
-                        android:text="sample Ticket Tittle text"
+                        android:text="sample Ticket Tittl e text"
                         android:textColor="#fff"
                         android:textSize="@dimen/cus_atdcftdcemt_tv_Text_textSize" />
                 </LinearLayout>
@@ -95,7 +94,7 @@
                 android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:orientation="vertical"
-                android:visibility="gone" >
+                android:visibility="visible" >
 
                 <include layout="@layout/cus__atdcftdc_element_attachment" />
             </LinearLayout>

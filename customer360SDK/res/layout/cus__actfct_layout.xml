@@ -25,7 +25,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/cus_edit_text_holo_light"
                 android:gravity="top"
-                android:hint="What&apos;s on your mind ?"
+                android:hint="@string/cus_WhatsOnYourMind"
                 android:text="" />
 
             <EditText
@@ -36,7 +36,7 @@
                 android:layout_marginTop="@dimen/cus_actfctl_et_name_marginTop"
                 android:background="@drawable/cus_edit_text_holo_light"
                 android:gravity="top"
-                android:hint="name"
+                android:hint="@string/cus_name"
                 android:text="" />
 
             <EditText
@@ -47,7 +47,7 @@
                 android:layout_marginTop="@dimen/cus_actfctl_et_email_marginTop"
                 android:background="@drawable/cus_edit_text_holo_light"
                 android:gravity="top"
-                android:hint="email"
+                android:hint="@string/cus_email"
                 android:imeActionLabel="Done"
                 android:imeOptions="actionDone"
                 android:inputType="textEmailAddress"
@@ -76,7 +76,7 @@
                 android:layout_margin="@dimen/cus_actfctl_btn_AttachImage_margin"
                 android:background="@drawable/cus_selector_act_btn_submit_grey"
                 android:padding="@dimen/cus_actfctl_btn_AttachImage_padding"
-                android:text="Attach Image"
+                android:text="@string/cus_AttachImage"
                 android:textColor="#fff"
                 android:textSize="@dimen/cus_actfctl_btn_AttachImage_textSize"
                 android:visibility="gone" />
@@ -90,7 +90,7 @@
                 android:layout_margin="@dimen/cus_actfctl_btn_submit_margin"
                 android:background="@drawable/cus_selector_act_btn_submit_grey"
                 android:padding="@dimen/cus_actfctl_btn_submit_padding"
-                android:text="Submit"
+                android:text="@string/cus_Submit"
                 android:textColor="#fff"
                 android:textSize="@dimen/cus_actfctl_btn_submit_textSize" />
         </LinearLayout>

@@ -28,7 +28,7 @@
         android:layout_above="@+id/cus_apl_ll_BtnWrapper"
         android:layout_marginBottom="@dimen/cus_apl_et_Caption_marginBottom"
         android:background="@drawable/cus_edit_text_holo_light"
-        android:hint="Caption"
+        android:hint="@string/cus_Caption"
         android:imeActionLabel="Done"
         android:imeOptions="actionDone"
         android:padding="@dimen/cus_actbar_tittle_textsize"

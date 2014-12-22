@@ -65,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Retry"
+                android:text="@string/cus_Retry"
                 android:textColor="#000"
                 android:textSize="@dimen/cus_atlftl_tv_retry_textSize" />
         </LinearLayout>
@@ -79,7 +79,7 @@
         android:background="@color/cus_activity_bgcolor_grey"
         android:gravity="center"
         android:padding="@dimen/cus_atlftl_tv_CreateTicket_padding"
-        android:text="Create A New Ticket"
+        android:text="@string/cus_CreateTicket"
         android:textColor="#000"
         android:textSize="@dimen/cus_atlftl_tv_CreateTicket_textSize"
         android:visibility="gone" />

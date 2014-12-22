@@ -48,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Retry"
+                android:text="@string/cus_Retry"
                 android:textColor="#000"
                 android:textSize="@dimen/cus_atdcftdc_tv_retry_textSize" />
         </LinearLayout>
@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#EEEEEE"
-            android:hint="Type Message ..."
+            android:hint="@string/cus_TypeMessage"
             android:maxLines="4"
             android:minHeight="@dimen/cus_atdcftdc_ll_InputWrapper_layout_height"
             android:padding="@dimen/cus_atdcftdc_et_Input_padding"
