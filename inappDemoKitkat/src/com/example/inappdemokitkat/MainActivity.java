@@ -26,8 +26,10 @@ public class MainActivity extends ActionBarActivity {
 		}
 
 		// Cus360.install(this, "99c4ed35cad15d08de031158469dcc14");
-		Cus360.install(this, "fa9903a09d9d15c486533d6563fd0e11");
-
+//		Cus360.install(this, "fa9903a09d9d15c486533d6563fd0e11");//hornok qa environment
+		Cus360.install(this, "dc4a374daeb4960729b91bab8cd12248");
+		
+		
 		Cus360.setThemeColor(R.color.reyaad); 
 		// Cus360.getInstance().launchCreateTicket(this);
 	}
