@@ -1,5 +1,7 @@
 package com.example.inappdemokitkat;
 
+import java.util.HashMap;
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
@@ -12,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import cus360.inapp.app.Cus360;
+import cus360.inapp.app.Cus360.EnvironmentTypes;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -27,7 +30,12 @@ public class MainActivity extends ActionBarActivity {
 
 		// Cus360.install(this, "99c4ed35cad15d08de031158469dcc14");
 //		Cus360.install(this, "fa9903a09d9d15c486533d6563fd0e11");//hornok qa environment
-		Cus360.install(this, "dc4a374daeb4960729b91bab8cd12248");
+		
+		HashMap<String, Object> mConfig = new HashMap<String, Object>();
+		mConfig.put(Cus360.mStrKeyEnvironmentType, EnvironmentTypes.LIVE);
+		
+		
+		Cus360.install(this, "dc4a374daeb4960729b91bab8cd12248",mConfig);
 		
 		
 		Cus360.setThemeColor(R.color.reyaad); 
