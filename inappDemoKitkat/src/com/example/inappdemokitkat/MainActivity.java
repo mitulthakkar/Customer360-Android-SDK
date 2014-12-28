@@ -29,14 +29,19 @@ public class MainActivity extends ActionBarActivity {
 		}
 
 		// Cus360.install(this, "99c4ed35cad15d08de031158469dcc14");
-//		Cus360.install(this, "fa9903a09d9d15c486533d6563fd0e11");//hornok qa environment
-		
+		//Cus360.install(this, "fa9903a09d9d15c486533d6563fd0e11");//hornok qa environment
+		 
 		HashMap<String, Object> mConfig = new HashMap<String, Object>();
-		mConfig.put(Cus360.mStrKeyEnvironmentType, EnvironmentTypes.LIVE);
+		mConfig.put(Cus360.mStrKeyEnvironmentType, EnvironmentTypes.TEST);
 		
 		
-		Cus360.install(this, "dc4a374daeb4960729b91bab8cd12248",mConfig);
+	//	Cus360.install(this, "dc4a374daeb4960729b91bab8cd12248",mConfig);
+	//	Cus360.install(this, "fa9903a09d9d15c486533d6563fd0e11",mConfig);//hornok qa environment with config ..
 		
+		
+		//After new authentication
+	//	Cus360.install(this, "fa9903a09d9d15c486533d6563fd0e11","af2e12ewd564f354dcc",mConfig);//hornok qa environment with config ..with access_token old
+		Cus360.install(this,"af2e12ewd564f354dcc",mConfig);//hornok qa environment with config ..
 		
 		Cus360.setThemeColor(R.color.reyaad); 
 		// Cus360.getInstance().launchCreateTicket(this);
