@@ -62,7 +62,7 @@
 
         -->
         <receiver
-            android:name="cus360.inapp.base.gcm.GcmBroadcastReceiver"
+            android:name="cus360.inapp.helpdesk.base.gcm.GcmBroadcastReceiver"
             android:permission="com.google.android.c2dm.permission.SEND" >
             <intent-filter>
 
