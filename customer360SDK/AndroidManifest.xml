@@ -19,36 +19,36 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name="cus360.inapp.app.ticket.createticket.ActivityCreateTicket"
+            android:name="cus360.inapp.helpdesk.app.ticket.createticket.ActivityCreateTicket"
             android:label="@string/app_name" >
         </activity>
-        <activity
-            android:name="cus360.inapp.app.chat.ActivityChat"
+        <!-- <activity
+            android:name="cus360.inapp.helpdesk.app.chat.ActivityChat"
             android:label="@string/app_name" 
             android:windowSoftInputMode="adjustResize">
-        </activity>
+        </activity> -->
         <activity
-            android:name="cus360.inapp.app.ticket.createticket.ActivityPreview"
+            android:name="cus360.inapp.helpdesk.app.ticket.createticket.ActivityPreview"
             android:label="@string/app_name"
             android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
         <activity
-            android:name="cus360.inapp.app.ticket.ticketlisting.ActivityTicketListing"
+            android:name="cus360.inapp.helpdesk.app.ticket.ticketlisting.ActivityTicketListing"
             android:label="@string/app_name"
             android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
         <activity
-            android:name="cus360.inapp.app.ticket.ticketlisting.ActivityTicketDetailsConversation"
+            android:name="cus360.inapp.helpdesk.app.ticket.ticketlisting.ActivityTicketDetailsConversation"
             android:label="@string/app_name"
             android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
         <activity
-            android:name="cus360.inapp.app.ticket.ticketlisting.gallery.ActivityPhotoGallery"
+            android:name="cus360.inapp.helpdesk.app.ticket.ticketlisting.gallery.ActivityPhotoGallery"
             android:label="@string/app_name"
             android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
         <activity
-            android:name="cus360.inapp.app.thankyou.ActivityThankYou"
+            android:name="cus360.inapp.helpdesk.app.thankyou.ActivityThankYou"
             android:label="@string/app_name"
             android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
@@ -58,7 +58,8 @@
           services and hand them to the custom IntentService.
 
           The com.google.android.c2dm.permission.SEND permission is necessary
-          so only GCM services can send data messages for the app.
+          so only GCM services can send data messages for the app.
+
         -->
         <receiver
             android:name="cus360.inapp.base.gcm.GcmBroadcastReceiver"
@@ -72,7 +73,7 @@
             </intent-filter>
         </receiver>
 
-        <service android:name="cus360.inapp.base.gcm.GcmIntentService" />
+        <service android:name="cus360.inapp.helpdesk.base.gcm.GcmIntentService" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />
