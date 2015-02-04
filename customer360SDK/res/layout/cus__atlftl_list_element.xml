@@ -11,6 +11,13 @@
         android:layout_height="@dimen/cus_atlftl_ll_contentWrapper_layout_height"
         android:gravity="center_vertical"
         android:orientation="horizontal" >
+        
+        <ImageView
+            android:id="@+id/cus_active_inactive_ticket_arraow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="5dp"
+            android:src="@drawable/inactive_ticket" />
 
         <TextView
             android:id="@+id/cus_atlftl_tv_text"
@@ -31,7 +38,7 @@
             android:layout_height="match_parent"
             android:layout_marginRight="@dimen/cus_atlftl_iv_arrow_layout_marginRight"
             android:padding="@dimen/cus_atlftl_iv_arrow_padding"
-            android:src="@drawable/cus_black_arrow" />
+            android:src="@drawable/arrow" />
     </LinearLayout>
 
     <View

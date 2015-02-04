@@ -78,7 +78,7 @@
 	<dimen name="cus_atlftl_tv_CreateTicket_textSize">20sp</dimen>
 	
 	<dimen name="cus_atlftl_ll_contentWrapper_layout_height">60dp</dimen>
-	<dimen name="cus_atlftl_tv_text_layout_marginLeft">16dp</dimen>
+	<dimen name="cus_atlftl_tv_text_layout_marginLeft">5dp</dimen>
 	<dimen name="cus_atlftl_tv_text_layout_marginRight">16dp</dimen>
 	<dimen name="cus_atlftl_tv_text_textSize">18sp</dimen>
 	<dimen name="cus_atlftl_iv_arrow_layout_width">40dp</dimen>
