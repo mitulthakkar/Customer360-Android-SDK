@@ -49,7 +49,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.4"
             android:background="@drawable/cus_selector_ap_btns_defaukt_white"
-            android:src="@drawable/cus_action_back"
+            android:src="@drawable/cus_action_picture_holo_light"
             android:text="Select Image"
             android:textColor="#fff" />
 

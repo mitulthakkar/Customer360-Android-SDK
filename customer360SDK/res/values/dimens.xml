@@ -52,20 +52,20 @@
 	<dimen name="cus_atdcftdcemt_v_emptyspace_layout_width">60dp</dimen>
 	<dimen name="cus_atdcftdcemt_ll_contentWrapper2_layout_margin">8dp</dimen>
 	<dimen name="cus_atdcftdcemt_ll_contentWrapper2_padding">8dp</dimen>
-	<dimen name="cus_atdcftdcemt_tv_Name_textSize">20sp</dimen>
-	<dimen name="cus_atdcftdcemt_tv_Text_textSize">18sp</dimen>
+	<dimen name="cus_atdcftdcemt_tv_Name_textSize">14sp</dimen>
+	<dimen name="cus_atdcftdcemt_tv_Text_textSize">14sp</dimen>
 	<dimen name="cus_atdcftdcemt_tv_Text_layout_marginTop">10dp</dimen>
-	<dimen name="cus_atdcftdcemt_iv_Icon_layout_width">60dp</dimen>
-	<dimen name="cus_atdcftdcemt_iv_Icon_layout_height">60dp</dimen>
+	<dimen name="cus_atdcftdcemt_iv_Icon_layout_width">40dp</dimen>
+	<dimen name="cus_atdcftdcemt_iv_Icon_layout_height">40dp</dimen>
 	<dimen name="cus_atdcftdcemt_iv_Icon_layout_marginRight">8dp</dimen>
 	
 	<dimen name="cus_atdcftdc_iv_retry_layout_width">100dp</dimen>
 	<dimen name="cus_atdcftdc_iv_retry_layout_height">100dp</dimen>
 	<dimen name="cus_atdcftdc_tv_retry_textSize">22sp</dimen>
 	<dimen name="cus_atdcftdc_v_divided_layout_height">2dp</dimen>
-	<dimen name="cus_atdcftdc_ll_InputWrapper_layout_height">60dp</dimen>
+	<dimen name="cus_atdcftdc_ll_InputWrapper_layout_height">48dp</dimen>
 	<dimen name="cus_atdcftdc_et_Input_padding">8dp</dimen>
-	<dimen name="cus_atdcftdc_iv_SendBtn_layout_width">60dp</dimen>
+	<dimen name="cus_atdcftdc_iv_SendBtn_layout_width">48dp</dimen>
 	
 	
 	<dimen name="cus_atlftl_iv_NewTicket_layout_width">60dp</dimen>
@@ -80,18 +80,18 @@
 	<dimen name="cus_atlftl_ll_contentWrapper_layout_height">60dp</dimen>
 	<dimen name="cus_atlftl_tv_text_layout_marginLeft">5dp</dimen>
 	<dimen name="cus_atlftl_tv_text_layout_marginRight">16dp</dimen>
-	<dimen name="cus_atlftl_tv_text_textSize">18sp</dimen>
+	<dimen name="cus_atlftl_tv_text_textSize">16sp</dimen>
 	<dimen name="cus_atlftl_iv_arrow_layout_width">40dp</dimen>
-	<dimen name="cus_atlftl_iv_arrow_layout_marginRight">8dp</dimen>
+	<dimen name="cus_atlftl_iv_arrow_layout_marginRight">4dp</dimen>
 	<dimen name="cus_atlftl_iv_arrow_padding">10dp</dimen>
 	<dimen name="cus_atlftl_v_divider_layout_height">1dp</dimen>
 	
 	<dimen name="cus_ftyl_iv_tickmark_layout_marginTop">70dp</dimen>
-	<dimen name="cus_ftyl_tv_ThankYouText_layout_marginTop">10dp</dimen>
+	<dimen name="cus_ftyl_tv_ThankYouText_layout_marginTop">8dp</dimen>
 	<dimen name="cus_ftyl_tv_ThankYouText_textSize">25sp</dimen>
-	<dimen name="cus_ftyl_rl_InfoWrapper_bg_layout_margin">5dp</dimen>
+	<dimen name="cus_ftyl_rl_InfoWrapper_bg_layout_margin">24dp</dimen>
 	<dimen name="cus_ftyl_rl_InfoWrapper_bg_padding">2dp</dimen>
-	<dimen name="cus_ftyl_rl_InfoWrapper_padding">10dp</dimen>
+	<dimen name="cus_ftyl_rl_InfoWrapper_padding">16dp</dimen>
 	<dimen name="cus_ftyl_tv_RefText_layout_marginTop">10dp</dimen>
 	
 	<dimen name="cus_ftyl_tv_HelpDeskText_layout_marginTop">10dp</dimen>

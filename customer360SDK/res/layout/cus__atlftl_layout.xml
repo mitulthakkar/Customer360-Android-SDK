@@ -11,6 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/cus_atlftl_tv_CreateTicket"
+        android:divider="#C8C8C8"
+        android:dividerHeight="1dp"
+        android:listSelector="#dedede"
         android:visibility="visible" >
     </ListView>
 
@@ -26,16 +29,17 @@
             android:id="@+id/cus_atlftl_iv_NewTicket"
             android:layout_width="@dimen/cus_atlftl_iv_NewTicket_layout_width"
             android:layout_height="@dimen/cus_atlftl_iv_NewTicket_layout_height"
-            android:src="@drawable/cus_action_ticket_plus_light" />
+            android:src="@drawable/create_ticket_new" />
 
         <TextView
             android:id="@+id/cus_atlftl_tv_NoItemsFoundText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Create a new ticket "
+            android:text="Create a new Ticket"
+            android:layout_marginTop="16dp"
             android:textColor="@color/cus_blackTranslucent"
-            android:textSize="@dimen/cus_atlftl_tv_NoItemsFoundText_textSize" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <RelativeLayout

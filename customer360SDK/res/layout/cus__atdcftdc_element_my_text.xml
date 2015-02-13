@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
+        android:weightSum="1"
         android:orientation="horizontal" >
 
         <LinearLayout
@@ -17,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/cus_atdcftdcemt_ll_contentWrapper2_layout_margin"
-            android:layout_weight="1"
+            android:layout_weight="0.8"
             android:background="@drawable/cus_round_shape_default"
             android:gravity="center_vertical"
             android:orientation="vertical"
@@ -43,7 +44,8 @@
                     android:layout_width="@dimen/cus_atdcftdcemt_iv_Icon_layout_width"
                     android:layout_height="@dimen/cus_atdcftdcemt_iv_Icon_layout_height"
                     android:layout_marginRight="@dimen/cus_atdcftdcemt_iv_Icon_layout_marginRight"
-                    android:src="@drawable/cus_consumer_icon" />
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/circle_agent" />
 
                 <LinearLayout
                     android:id="@+id/cus_atdcftdcemt_ll_contentWrapper3"
@@ -58,17 +60,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Miley Cyrus"
-                        android:textColor="#fff"
+                        android:textColor="#000"
+                        android:alpha="0.45"
                         android:textSize="@dimen/cus_atdcftdcemt_tv_Name_textSize" />
 
                     <TextView
                         android:id="@+id/cus_atdcftdcemt_tv_Text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/cus_atdcftdcemt_tv_Text_layout_marginTop"
+                        android:layout_marginTop="4dp"
                         android:layout_weight="1"
                         android:text="sample Ticket Tittle text"
-                        android:textColor="#fff"
+                        android:textColor="#333"
                         android:textSize="@dimen/cus_atdcftdcemt_tv_Text_textSize" />
                 </LinearLayout>
             </LinearLayout>

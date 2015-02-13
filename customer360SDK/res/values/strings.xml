@@ -15,8 +15,8 @@
 	<string name="cus_NoInternetConnectionFound.">No Internet Connection Found.</string>
 	
 	<string name="cus_WhatsOnYourMind">What\&apos;s on your mind ?</string>
-	<string name="cus_name">name</string>
-	<string name="cus_email">email</string>
+	<string name="cus_name">Name</string>
+	<string name="cus_email">Email</string>
 	<string name="cus_Submit">Submit</string>
 	<string name="cus_AttachImage">Attach Image</string>
 	<string name="cus_Caption">Caption</string>

@@ -26,6 +26,8 @@
                 android:background="@drawable/cus_edit_text_holo_light"
                 android:gravity="top"
                 android:hint="@string/cus_WhatsOnYourMind"
+                android:lines="4"
+                android:maxLines="5"
                 android:text="" />
 
             <EditText
@@ -83,13 +85,14 @@
 
             <Button
                 android:id="@+id/cus_actfctl_btn_submit"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_gravity="bottom"
+                android:layout_gravity="center"
                 android:layout_margin="@dimen/cus_actfctl_btn_submit_margin"
                 android:background="@drawable/cus_selector_act_btn_submit_grey"
-                android:padding="@dimen/cus_actfctl_btn_submit_padding"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
                 android:text="@string/cus_Submit"
                 android:textColor="#fff"
                 android:textSize="@dimen/cus_actfctl_btn_submit_textSize" />

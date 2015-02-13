@@ -22,6 +22,7 @@
             <ImageView
                 android:id="@+id/cus_actae_iv_thumbnail"
                 android:layout_width="@dimen/cus_actae_iv_thumbnail_width"
+                android:scaleType="fitXY"
                 android:layout_height="@dimen/cus_actae_iv_thumbnail_height" />
 
             <ProgressBar
@@ -53,13 +54,14 @@
                 android:layout_height="wrap_content"
                 android:singleLine="true"
                 android:text="478kb"
-                android:textSize="@dimen/cus_actae_tv_size_textSize" />
+                android:textColor="#888"
+                android:textSize="12sp" />
         </LinearLayout>
 
         <ImageView
             android:id="@+id/cus_actae_iv_cancel"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:layout_marginLeft="@dimen/cus_actae_iv_cancel_textSize"
             android:background="@drawable/cus_selector_default"
             android:src="@drawable/cus_action_cancel" />
@@ -68,7 +70,6 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="10dp"
         android:background="#C8C8C8" />
 
 </LinearLayout>

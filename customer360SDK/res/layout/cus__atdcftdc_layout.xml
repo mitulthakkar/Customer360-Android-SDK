@@ -78,6 +78,7 @@
             android:background="#EEEEEE"
             android:hint="@string/cus_TypeMessage"
             android:maxLines="4"
+            android:textSize="16sp"
             android:minHeight="@dimen/cus_atdcftdc_ll_InputWrapper_layout_height"
             android:padding="@dimen/cus_atdcftdc_et_Input_padding"
             android:textColor="#000" />
@@ -87,7 +88,7 @@
             android:layout_width="@dimen/cus_atdcftdc_iv_SendBtn_layout_width"
             android:layout_height="@dimen/cus_atdcftdc_ll_InputWrapper_layout_height"
             android:background="#EEEEEE"
-            android:padding="10dp"
+            android:padding="8dp"
             android:src="@drawable/cus_sendbtn" />
     </LinearLayout>
 

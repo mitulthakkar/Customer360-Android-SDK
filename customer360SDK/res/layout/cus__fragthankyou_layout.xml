@@ -40,8 +40,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/cus_ftyl_tv_ThankYouText"
                 android:layout_centerHorizontal="true"
-                android:layout_margin="@dimen/cus_ftyl_rl_InfoWrapper_bg_layout_margin"
-                android:background="@drawable/cus_round_shape_default"
+                android:layout_marginTop="@dimen/cus_ftyl_tv_ThankYouText_layout_marginTop"
+                android:layout_marginLeft="@dimen/cus_ftyl_rl_InfoWrapper_bg_layout_margin"
+                android:layout_marginRight="@dimen/cus_ftyl_rl_InfoWrapper_bg_layout_margin"
                 android:orientation="vertical"
                 android:padding="@dimen/cus_ftyl_rl_InfoWrapper_bg_padding" >
 
@@ -49,16 +50,15 @@
                     android:id="@+id/cus_ftyl_rl_InfoWrapper"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/cus_thankyou_info_bg_grey"
+                    android:background="@drawable/cus_round_shape_thankyou"
                     android:gravity="center_horizontal"
                     android:orientation="vertical"
-                    android:padding="@dimen/cus_ftyl_rl_InfoWrapper_padding" >
+                    android:padding="8dp" >
 
                     <TextView
                         android:id="@+id/cus_ftyl_tv_RefText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/cus_ftyl_tv_RefText_layout_marginTop"
                         android:gravity="center"
                         android:text="Thank You"
                         android:textColor="@color/cus_actl_textcolor_grey" />
@@ -67,7 +67,6 @@
                         android:id="@+id/cus_ftyl_tv_HelpDeskText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/cus_ftyl_tv_HelpDeskText_layout_marginTop"
                         android:gravity="center"
                         android:text="Thank You"
                         android:textColor="@color/cus_actl_textcolor_grey" />
@@ -78,11 +77,11 @@
                 android:id="@+id/cus_ftyl_btn_Close"
                 android:layout_width="@dimen/cus_ftyl_btn_Close_layout_width"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:layout_below="@+id/cus_ftyl_rl_InfoWrapper_bg"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/cus_ftyl_btn_Close_layout_marginTop"
+                android:layout_marginTop="12dp"
                 android:background="@drawable/cus_selector_act_btn_submit_grey"
-                android:padding="@dimen/cus_ftyl_btn_Close_layout_padding"
                 android:text="@string/cus_Close"
                 android:textColor="@color/cus_whitet" />
         </RelativeLayout>
