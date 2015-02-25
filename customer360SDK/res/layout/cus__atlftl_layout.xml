@@ -5,6 +5,16 @@
     android:layout_height="match_parent"
     android:background="@color/cus_activity_bgcolor_grey"
     android:orientation="vertical" >
+    
+    <ProgressBar
+        
+        android:id="@+id/progressbarloading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/progress" />
 
     <ListView
         android:id="@+id/cus_atlftl_lv"
@@ -14,7 +24,7 @@
         android:divider="#C8C8C8"
         android:dividerHeight="1dp"
         android:listSelector="#dedede"
-        android:visibility="visible" >
+        android:visibility="gone" >
     </ListView>
 
     <LinearLayout
