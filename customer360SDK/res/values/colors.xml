@@ -9,7 +9,7 @@
     <color name="cus_Transpaprent">#00000000</color>
     <color name="cus_whitet">#fff</color>
     <color name="cus_white_translucent">#8fff</color>
-    <color name="cus_activity_bgcolor_grey">#EEEEEE</color>
+    <color name="cus_activity_bgcolor_grey">#FFFFFF</color>
 
     <!-- actl -->
     <color name="cus_actl_textcolor_grey">#979797</color>

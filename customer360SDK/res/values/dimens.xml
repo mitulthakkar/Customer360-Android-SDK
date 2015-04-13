@@ -40,7 +40,7 @@
 	<dimen name="cus_actfctl_btn_AttachImage_margin">10dp</dimen>
 	<dimen name="cus_actfctl_btn_AttachImage_padding">10dp</dimen>
 	<dimen name="cus_actfctl_btn_AttachImage_textSize">20sp</dimen>
-	<dimen name="cus_actfctl_btn_submit_margin">10dp</dimen>
+	<dimen name="cus_actfctl_btn_submit_margin">16dp</dimen>
 	<dimen name="cus_actfctl_btn_submit_padding">10dp</dimen>
 	<dimen name="cus_actfctl_btn_submit_textSize">20dp</dimen>
 	
@@ -99,6 +99,9 @@
 	<dimen name="cus_ftyl_btn_Close_layout_width">150dp</dimen>
 	<dimen name="cus_ftyl_btn_Close_layout_marginTop">10dp</dimen>
 	<dimen name="cus_ftyl_btn_Close_layout_padding">10dp</dimen>
+	
+	<dimen name="cus_ticket_create_margin">8dp</dimen>
+	<dimen name="cus_ticket_create_margin_top">16dp</dimen>
 	
 	
 

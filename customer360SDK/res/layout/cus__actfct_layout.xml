@@ -4,56 +4,79 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cus_activity_bgcolor_grey"
-    android:orientation="vertical"
-    android:padding="@dimen/cus_actbar_tittle_textsize" >
+     >
 
     <ScrollView
         android:id="@+id/cus_sv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true" >
+        android:fillViewport="true"
+        android:layout_marginLeft="@dimen/cus_ticket_create_margin_top"
+    	android:layout_marginRight="@dimen/cus_ticket_create_margin_top"
+    	android:layout_marginTop="@dimen/cus_ticket_create_margin_top" >
 
         <LinearLayout
             android:id="@+id/cus_actfctl_ll_attachmentWrapper"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical" >
-
-            <EditText
-                android:id="@+id/cus_actfctl_et_ticketText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/cus_edit_text_holo_light"
-                android:gravity="top"
-                android:hint="@string/cus_WhatsOnYourMind"
-                android:lines="4"
-                android:maxLines="5"
-                android:text="" />
-
-            <EditText
-                android:id="@+id/cus_actfctl_et_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/cus_actfctl_et_ticketText"
-                android:layout_marginTop="@dimen/cus_actfctl_et_name_marginTop"
-                android:background="@drawable/cus_edit_text_holo_light"
-                android:gravity="top"
-                android:hint="@string/cus_name"
-                android:text="" />
-
+            
             <EditText
                 android:id="@+id/cus_actfctl_et_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/cus_actfctl_et_name"
-                android:layout_marginTop="@dimen/cus_actfctl_et_email_marginTop"
-                android:background="@drawable/cus_edit_text_holo_light"
+                android:background="@drawable/cus_ticket_create_rounded_corner"
                 android:gravity="top"
                 android:hint="@string/cus_email"
                 android:imeActionLabel="Done"
                 android:imeOptions="actionDone"
                 android:inputType="textEmailAddress"
                 android:singleLine="true"
+                android:padding="@dimen/cus_ticket_create_margin"
+                android:text="" />
+            
+            <TextView 
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginTop="@dimen/cus_ticket_create_margin_top"
+                android:layout_below="@+id/cus_actfctl_et_email"
+                android:textStyle="bold" />
+            
+            <EditText
+                android:id="@+id/cus_actfctl_et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtName"
+                android:layout_marginTop="@dimen/cus_actfctl_et_name_marginTop"
+                android:background="@drawable/cus_ticket_create_rounded_corner"
+                android:gravity="top"
+                android:hint="@string/cus_name"
+                android:padding="@dimen/cus_ticket_create_margin"
+                android:text="" />
+            
+            <TextView 
+                android:id="@+id/txtFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feedback / Suggestion"
+                android:layout_marginTop="@dimen/cus_ticket_create_margin_top"
+                android:layout_below="@+id/cus_actfctl_et_name"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/cus_actfctl_et_ticketText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cus_ticket_create_rounded_corner"
+                android:layout_below="@+id/txtFeedback"
+                android:gravity="top"
+                android:hint="@string/cus_WhatsOnYourMind"
+                android:lines="4"
+                android:maxLines="5"
+                android:padding="@dimen/cus_ticket_create_margin"
+                android:layout_marginTop="@dimen/cus_actfctl_et_name_marginTop"
                 android:text="" />
 
             <View

@@ -9,12 +9,12 @@
     <string name="cus_Opps_Something_Went_Wrong">Opps Something Went Wrong ..Please try again after some time</string>
 
     <!-- GCM OTA PushNotification Host App PackageName -->
-    <string name="cus_host_packagename">your_package_name</string>
+    <string name="cus_host_packagename">com.customer360support</string>
 	
 	<string name="cus_LiveSupportChat">Live Support Chat</string>
 	<string name="cus_NoInternetConnectionFound.">No Internet Connection Found.</string>
 	
-	<string name="cus_WhatsOnYourMind">What\&apos;s on your mind ?</string>
+	<string name="cus_WhatsOnYourMind">Please give us your feedback</string>
 	<string name="cus_name">Name</string>
 	<string name="cus_email">Email</string>
 	<string name="cus_Submit">Submit</string>
