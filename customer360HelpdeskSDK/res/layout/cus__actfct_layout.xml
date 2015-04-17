@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cus_actfctl_rl_screenparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cus_activity_bgcolor_grey"
+     >
+
+    <ScrollView
+        android:id="@+id/cus_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginLeft="@dimen/cus_ticket_create_margin_top"
+    	android:layout_marginRight="@dimen/cus_ticket_create_margin_top"
+    	android:layout_marginTop="@dimen/cus_ticket_create_margin_top" >
+
+        <LinearLayout
+            android:id="@+id/cus_actfctl_ll_attachmentWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <EditText
+                android:id="@+id/cus_actfctl_et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cus_ticket_create_rounded_corner"
+                android:gravity="top"
+                android:hint="@string/cus_email"
+                android:imeActionLabel="Done"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:padding="@dimen/cus_ticket_create_margin"
+                android:text="" />
+            
+            <TextView 
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginTop="@dimen/cus_ticket_create_margin_top"
+                android:layout_below="@+id/cus_actfctl_et_email"
+                android:textStyle="bold"
+                android:textSize="@dimen/cus_txt_default_size" />
+            
+            <EditText
+                android:id="@+id/cus_actfctl_et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtName"
+                android:layout_marginTop="@dimen/cus_medium_margin"
+                android:background="@drawable/cus_ticket_create_rounded_corner"
+                android:gravity="top"
+                android:hint="@string/cus_name"
+                android:padding="@dimen/cus_ticket_create_margin"
+                android:text="" />
+            
+            <TextView 
+                android:id="@+id/txtFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feedback / Suggestion"
+                android:layout_marginTop="@dimen/cus_ticket_create_margin_top"
+                android:layout_below="@+id/cus_actfctl_et_name"
+                android:textStyle="bold"
+                android:textSize="@dimen/cus_txt_default_size" />
+
+            <EditText
+                android:id="@+id/cus_actfctl_et_ticketText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cus_ticket_create_rounded_corner"
+                android:layout_below="@+id/txtFeedback"
+                android:gravity="top"
+                android:hint="@string/cus_WhatsOnYourMind"
+                android:lines="4"
+                android:maxLines="5"
+                android:padding="@dimen/cus_ticket_create_margin"
+                android:layout_marginTop="@dimen/cus_medium_margin"
+                android:text="" />
+
+            <View
+                android:id="@+id/cus_actfctl_v_Divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cus_actfctl_v_Divider_height"
+                android:layout_marginTop="@dimen/cus_actfctl_v_Divider_marginTop"
+                android:background="#C8C8C8"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/cus_actfctl_AttachmentplaceHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cus_actfctl_btn_AttachImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cus_actfctl_btn_AttachImage_margin"
+                android:background="@drawable/cus_selector_act_btn_submit_grey"
+                android:padding="@dimen/cus_actfctl_btn_AttachImage_padding"
+                android:text="@string/cus_AttachImage"
+                android:textColor="#fff"
+                android:textSize="@dimen/cus_actfctl_btn_AttachImage_textSize"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/cus_actfctl_btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cus_actfctl_btn_submit_margin"
+                android:background="@drawable/cus_selector_act_btn_submit_grey"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:text="@string/cus_Submit"
+                android:textColor="#fff"
+                android:textSize="@dimen/cus_actfctl_btn_submit_textSize" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

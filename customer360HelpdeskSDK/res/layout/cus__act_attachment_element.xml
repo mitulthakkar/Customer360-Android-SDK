@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cus_actl_ll_attachmentWrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/cus_actae_ll_contentWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cus_actae_ll_contentWrapper_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/cus_actae_rl_imageWrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/cus_actae_rl_imageWrapper_margin"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/cus_actae_iv_thumbnail"
+                android:layout_width="@dimen/cus_actae_iv_thumbnail_width"
+                android:scaleType="fitXY"
+                android:layout_height="@dimen/cus_actae_iv_thumbnail_height" />
+
+            <ProgressBar
+                android:id="@+id/cus_actae_pb_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/cus_actae_rl_infoWrapper"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cus_actae_tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="awd.jpg"
+                android:textSize="@dimen/cus_actae_tv_name_textSize" />
+
+            <TextView
+                android:id="@+id/cus_actae_tv_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="478kb"
+                android:textColor="#888"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cus_actae_iv_cancel"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="@dimen/cus_actae_iv_cancel_textSize"
+            android:background="@drawable/cus_selector_default"
+            android:src="@drawable/cus_action_cancel" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C8C8C8" />
+
+</LinearLayout>

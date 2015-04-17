@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <dimen name="cus_actbar_height">48dp</dimen>
+    <dimen name="cus_actbar_padding_default">8dp</dimen>
+    <dimen name="cus_actbar_tittle_textsize">20sp</dimen>
+	<dimen name="cusab_ll_actionbar_home_paddingRight">10sp</dimen>
+	<dimen name="cusab_iv_up_marginRight">-8dp</dimen>
+	
+	<dimen name="cus_divider_height">3dp</dimen>
+	
+    <dimen name="cus_activity_horizontal_margin">16dp</dimen>
+    <dimen name="cus_activity_vertical_margin">16dp</dimen>
+	
+	<dimen name="cus_acfcl_iv_LiveChatLogo_width">48dp</dimen>
+	<dimen name="cus_acfcl_iv_LiveChatLogo_height">48dp</dimen>
+	<dimen name="cus_acfcl_tv_LiveChat_height">48dp</dimen>
+	<dimen name="cus_acfcl_tv_LiveChat_textsize">16sp</dimen>
+	<dimen name="cus_acfcl_iv_retry_width">150dp</dimen>
+	<dimen name="cus_acfcl_iv_retry_height">150dp</dimen>
+	<dimen name="cus_acfcl_iv_retry_marginTop">40dp</dimen>
+	<dimen name="cus_acfcl_tv_ErrorTxt_paddingLeft">16dp</dimen>
+	<dimen name="cus_acfcl_tv_ErrorTxt_paddingRight">16dp</dimen>
+	<dimen name="cus_acfcl_tv_ErrorTxt_textSize">18sp</dimen>
+	<dimen name="cus_acfcl_tv_ErrorTxt2_paddingLeft">16dp</dimen>
+	<dimen name="cus_acfcl_tv_ErrorTxt2_paddingRight">16dp</dimen>
+	
+	<dimen name="cus_actae_ll_contentWrapper_height">60dp</dimen>
+	<dimen name="cus_actae_rl_imageWrapper_margin">8dp</dimen>
+	<dimen name="cus_actae_iv_thumbnail_width">50dp</dimen>
+	<dimen name="cus_actae_iv_thumbnail_height">50dp</dimen>
+	<dimen name="cus_actae_tv_name_textSize">18sp</dimen>
+	<dimen name="cus_actae_tv_size_textSize">15sp</dimen>
+	<dimen name="cus_actae_iv_cancel_textSize">16sp</dimen>
+	
+	<dimen name="cus_actfctl_et_name_marginTop">10dp</dimen>
+	<dimen name="cus_actfctl_et_email_marginTop">10dp</dimen>
+	<dimen name="cus_actfctl_v_Divider_height">1dp</dimen>
+	<dimen name="cus_actfctl_v_Divider_marginTop">20dp</dimen>
+	<dimen name="cus_actfctl_btn_AttachImage_margin">10dp</dimen>
+	<dimen name="cus_actfctl_btn_AttachImage_padding">10dp</dimen>
+	<dimen name="cus_actfctl_btn_AttachImage_textSize">20sp</dimen>
+	<dimen name="cus_actfctl_btn_submit_margin">16dp</dimen>
+	<dimen name="cus_actfctl_btn_submit_padding">10dp</dimen>
+	<dimen name="cus_actfctl_btn_submit_textSize">20dp</dimen>
+	
+	<dimen name="cus_apl_iv_Preview_marginBottom">20dp</dimen>
+	<dimen name="cus_apl_iv_Preview_marginTop">20dp</dimen>
+	<dimen name="cus_apl_et_Caption_marginBottom">20dp</dimen>
+	<dimen name="cus_apl_ll_BtnWrapper_layout_height">50dp</dimen>
+	
+	<dimen name="cus_atdcftdcemt_v_emptyspace_layout_width">60dp</dimen>
+	<dimen name="cus_atdcftdcemt_ll_contentWrapper2_layout_margin">8dp</dimen>
+	<dimen name="cus_atdcftdcemt_ll_contentWrapper2_padding">8dp</dimen>
+	<dimen name="cus_atdcftdcemt_tv_Name_textSize">14sp</dimen>
+	<dimen name="cus_atdcftdcemt_tv_Text_textSize">14sp</dimen>
+	<dimen name="cus_atdcftdcemt_tv_Text_layout_marginTop">10dp</dimen>
+	<dimen name="cus_atdcftdcemt_iv_Icon_layout_width">40dp</dimen>
+	<dimen name="cus_atdcftdcemt_iv_Icon_layout_height">40dp</dimen>
+	<dimen name="cus_atdcftdcemt_iv_Icon_layout_marginRight">8dp</dimen>
+	
+	<dimen name="cus_atdcftdc_iv_retry_layout_width">100dp</dimen>
+	<dimen name="cus_atdcftdc_iv_retry_layout_height">100dp</dimen>
+	<dimen name="cus_atdcftdc_tv_retry_textSize">22sp</dimen>
+	<dimen name="cus_atdcftdc_v_divided_layout_height">2dp</dimen>
+	<dimen name="cus_atdcftdc_ll_InputWrapper_layout_height">48dp</dimen>
+	<dimen name="cus_atdcftdc_et_Input_padding">8dp</dimen>
+	<dimen name="cus_atdcftdc_iv_SendBtn_layout_width">48dp</dimen>
+	
+	
+	<dimen name="cus_atlftl_iv_NewTicket_layout_width">60dp</dimen>
+	<dimen name="cus_atlftl_iv_NewTicket_layout_height">60dp</dimen>
+	<dimen name="cus_atlftl_tv_NoItemsFoundText_textSize">24sp</dimen>
+	<dimen name="cus_atlftl_iv_retry_layout_width">100dp</dimen>
+	<dimen name="cus_atlftl_iv_retry_layout_height">100dp</dimen>
+	<dimen name="cus_atlftl_tv_retry_textSize">22sp</dimen>
+	<dimen name="cus_atlftl_tv_CreateTicket_padding">10sp</dimen>
+	<dimen name="cus_atlftl_tv_CreateTicket_textSize">20sp</dimen>
+	
+	<dimen name="cus_atlftl_ll_contentWrapper_layout_height">60dp</dimen>
+	<dimen name="cus_atlftl_tv_text_layout_marginLeft">5dp</dimen>
+	<dimen name="cus_atlftl_tv_text_layout_marginRight">16dp</dimen>
+	<dimen name="cus_atlftl_tv_text_textSize">16sp</dimen>
+	<dimen name="cus_atlftl_iv_arrow_layout_width">40dp</dimen>
+	<dimen name="cus_atlftl_iv_arrow_layout_marginRight">4dp</dimen>
+	<dimen name="cus_atlftl_iv_arrow_padding">10dp</dimen>
+	<dimen name="cus_atlftl_v_divider_layout_height">1dp</dimen>
+	
+	<dimen name="cus_ftyl_iv_tickmark_layout_marginTop">70dp</dimen>
+	<dimen name="cus_ftyl_tv_ThankYouText_layout_marginTop">8dp</dimen>
+	<dimen name="cus_ftyl_tv_ThankYouText_textSize">25sp</dimen>
+	<dimen name="cus_ftyl_rl_InfoWrapper_bg_layout_margin">24dp</dimen>
+	<dimen name="cus_ftyl_rl_InfoWrapper_bg_padding">2dp</dimen>
+	<dimen name="cus_ftyl_rl_InfoWrapper_padding">16dp</dimen>
+	<dimen name="cus_ftyl_tv_RefText_layout_marginTop">10dp</dimen>
+	
+	<dimen name="cus_ftyl_tv_HelpDeskText_layout_marginTop">10dp</dimen>
+	
+	<dimen name="cus_ftyl_btn_Close_layout_width">150dp</dimen>
+	<dimen name="cus_ftyl_btn_Close_layout_marginTop">10dp</dimen>
+	<dimen name="cus_ftyl_btn_Close_layout_padding">10dp</dimen>
+	
+	<dimen name="cus_ticket_create_margin">8dp</dimen>
+	<dimen name="cus_ticket_create_margin_top">16dp</dimen>
+	
+	<dimen name="cus_medium_margin">4dp</dimen>
+	<dimen name="cus_txt_default_size">16sp</dimen>
+	
+	
+
+</resources>
