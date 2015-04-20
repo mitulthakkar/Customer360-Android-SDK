@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:id="@+id/rootParent"
+    	android:layout_width="match_parent" 
+    	android:layout_height="match_parent"
+    	android:background="@color/cus_prechatform_backgroud"
+    	android:orientation="vertical">
+    	
+    <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <LinearLayout 
+               	android:id="@+id/rootLayout"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:padding="@dimen/cus_prechatform_layout_padding"
+                 android:orientation="vertical">
+                 <!-- Content here -->
+           </LinearLayout>
+     </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">cus360InAppWiget</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Error Msgs -->
+    <string name="cus_Error_NoInternetAvail">Please check your internet connections and try again .</string>
+    <string name="cus_Error_Invalid_Acess_Token">INVALID ACCESS TOKEN</string>
+    <string name="cus_Opps_Something_Went_Wrong">Opps Something Went Wrong ..Please try again after some time</string>
+
+    <!-- GCM OTA PushNotification Host App PackageName -->
+    <string name="cus_host_packagename">com.customer360support</string>
+	
+	<string name="cus_LiveSupportChat">Live Support Chat</string>
+	<string name="cus_NoInternetConnectionFound.">No Internet Connection Found.</string>
+	
+	<string name="cus_WhatsOnYourMind">Please give us your feedback</string>
+	<string name="cus_name">Name</string>
+	<string name="cus_email">Email</string>
+	<string name="cus_Submit">Submit</string>
+	<string name="cus_AttachImage">Attach Image</string>
+	<string name="cus_Caption">Caption</string>
+	<string name="cus_TypeMessage">Type Message ...</string>
+	<string name="cus_CreateTicket">Create A New Ticket</string>
+	<string name="cus_Retry">Retry</string>
+	<string name="cus_ThankYou">Thank You</string>
+	<string name="cus_Close">Close</string>
+	
+	<string name="cus_PleaseConnectToInternetAndPressRefreshIconAbove">Please connect to internet and press refresh icon above.</string>
+	
+	<string-array name="chat_actionbar_menu_items">
+	    <item></item>
+		<item>Chat History</item>
+		<item>End Chat</item>
+	</string-array>
+	
+	<style parent="@android:style/Widget.Spinner" name="SpinnerAsEditText"><item name="android:background">@android:drawable/edit_text</item>
+</style>
+	
+	<string name="powered_by_customer360">Powered by <b>Customer360</b></string>
+	
+	<string name="title_notification">Sample Overlay View</string>
+    <string name="message_notification">Press To Hide Overlay</string>
+    
+    <string name="live_chat">Live Chat</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cus_prechatform_backgroud"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/rootLayoutScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/rootLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/cus_prechatform_layout_padding" >
+
+            <!-- Content here -->
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/cus_atlftl_rl_RetryWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cus_activity_bgcolor_grey"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/cus_atlftl_ll_RetryWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/cus_atlftl_iv_retry"
+                android:layout_width="@dimen/cus_atlftl_iv_retry_layout_width"
+                android:layout_height="@dimen/cus_atlftl_iv_retry_layout_height"
+                android:src="@drawable/cus_selector_acfcl_retry_grey" />
+
+            <TextView
+                android:id="@+id/cus_atlftl_tv_retry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/cus_Retry"
+                android:textColor="#000"
+                android:textSize="@dimen/cus_atlftl_tv_retry_textSize" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

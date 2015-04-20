@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cusai_iv_Attachment"
+    android:layout_width="@dimen/cus_actbar_height"
+    android:layout_height="@dimen/cus_actbar_height"
+    android:background="@drawable/cus_selector_actionbar_default"
+    android:paddingBottom="@dimen/cus_actbar_padding_default"
+    android:paddingTop="@dimen/cus_actbar_padding_default"
+    android:src="@drawable/cus_action_picture_holo_dark" />
