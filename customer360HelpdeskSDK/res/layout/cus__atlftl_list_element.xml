@@ -38,7 +38,8 @@
             android:singleLine="true"
             android:src="@drawable/cus_action_cancel"
             android:text="sample Ticket Title text"
-            android:textSize="@dimen/cus_atlftl_tv_text_textSize" />
+            android:textSize="@dimen/cus_atlftl_tv_text_textSize"
+            android:textColor="@color/cus_text_color" />
         
         <!-- <TextView
             android:id="@+id/txtTicketStatus"

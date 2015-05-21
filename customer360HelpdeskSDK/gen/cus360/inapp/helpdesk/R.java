@@ -29,6 +29,7 @@ public final class R {
         public static int cus_atdcftdc_red=0x7f040013;
         public static int cus_blackTranslucent=0x7f040004;
         public static int cus_roundshape_grey=0x7f04000a;
+        public static int cus_text_color=0x7f040015;
         /**  fragThanyou 
          */
         public static int cus_thankyou_info_bg_grey=0x7f04000d;

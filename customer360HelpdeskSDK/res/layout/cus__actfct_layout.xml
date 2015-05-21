@@ -43,7 +43,8 @@
                 android:layout_marginTop="@dimen/cus_ticket_create_margin_top"
                 android:layout_below="@+id/cus_actfctl_et_email"
                 android:textStyle="bold"
-                android:textSize="@dimen/cus_txt_default_size" />
+                android:textSize="@dimen/cus_txt_default_size"
+                android:textColor="@color/cus_text_color" />
             
             <EditText
                 android:id="@+id/cus_actfctl_et_name"
@@ -55,7 +56,9 @@
                 android:gravity="top"
                 android:hint="@string/cus_name"
                 android:padding="@dimen/cus_ticket_create_margin"
-                android:text="" />
+                android:text=""
+                android:textColor="@color/cus_text_color"
+                android:textColorHint="@color/cus_text_color" />
             
             <TextView 
                 android:id="@+id/txtFeedback"
@@ -65,7 +68,8 @@
                 android:layout_marginTop="@dimen/cus_ticket_create_margin_top"
                 android:layout_below="@+id/cus_actfctl_et_name"
                 android:textStyle="bold"
-                android:textSize="@dimen/cus_txt_default_size" />
+                android:textSize="@dimen/cus_txt_default_size"
+                android:textColor="@color/cus_text_color" />
 
             <EditText
                 android:id="@+id/cus_actfctl_et_ticketText"
@@ -79,7 +83,9 @@
                 android:maxLines="5"
                 android:padding="@dimen/cus_ticket_create_margin"
                 android:layout_marginTop="@dimen/cus_medium_margin"
-                android:text="" />
+                android:text=""
+                android:textColor="@color/cus_text_color"
+                android:textColorHint="@color/cus_text_color" />
 
             <View
                 android:id="@+id/cus_actfctl_v_Divider"
