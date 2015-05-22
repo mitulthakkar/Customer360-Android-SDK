@@ -32,7 +32,9 @@
         android:imeActionLabel="Done"
         android:imeOptions="actionDone"
         android:padding="@dimen/cus_actbar_tittle_textsize"
-        android:singleLine="true" />
+        android:singleLine="true"
+        android:textColor="@color/cus_text_color"
+        android:textColorHint="@color/cus_text_color" />
 
     <LinearLayout
         android:id="@+id/cus_apl_ll_BtnWrapper"
