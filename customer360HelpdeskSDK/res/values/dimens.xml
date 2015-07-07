@@ -106,6 +106,6 @@
 	<dimen name="cus_medium_margin">4dp</dimen>
 	<dimen name="cus_txt_default_size">16sp</dimen>
 	
-	
+	<dimen name="cus_form_layout_padding">10dp</dimen>
 
 </resources>

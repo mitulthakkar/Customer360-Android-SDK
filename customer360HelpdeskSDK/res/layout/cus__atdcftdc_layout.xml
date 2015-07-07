@@ -90,8 +90,7 @@
             android:maxLines="4"
             android:minHeight="@dimen/cus_atdcftdc_ll_InputWrapper_layout_height"
             android:padding="@dimen/cus_atdcftdc_et_Input_padding"
-            android:textColor="@color/cus_text_color"
-            android:textColorHint="@color/cus_text_color"
+            android:textColor="#000"
             android:textSize="16sp" />
 
         <ImageView

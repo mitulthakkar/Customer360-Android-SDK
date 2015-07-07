@@ -5,129 +5,164 @@
     android:background="#fcfcfc"
     android:orientation="vertical" >
     
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/waitingScreenLayout"
-        android:visibility="visible"
-        android:orientation="vertical" >
-        <ImageView 
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:src="@drawable/waitingscr" />
-        
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:orientation="horizontal" >
-            <TextView 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Powered by "
-                />
-            <TextView 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Customer360"
-                android:textStyle="bold"
-                />
-        </LinearLayout>
-    </LinearLayout>
-        
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/chatScreenLayout"
+    <TextView 
+        android:id="@+id/txtRecordNotFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Records not found"
         android:visibility="gone"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <FrameLayout
+        android:id="@+id/videoSection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/chatSection"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
         android:orientation="vertical" >
-        
-        <LinearLayout
-            android:id="@+id/linearMessageHolder"
+
+        <RelativeLayout
+            android:id="@+id/waitingScreenLayout"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="vertical" >
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/imgWaitingScreen"
+                android:layout_width="280dp"
+                android:layout_height="240dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/waitingscr" />
             
-            <LinearLayout 
-                android:id="@+id/linearVideoHolder"
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please wait. You are in Queue."
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/imgWaitingScreen"
+                    android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Powered by " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer360"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/chatScreenLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/linearMessageHolder"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:visibility="gone"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:orientation="vertical" >
-                <TextView 
-                   android:id="@+id/txtCameraView"
-                   android:layout_width="match_parent"
-                   android:layout_height="50dp"
-                   android:text="Loading..."
-                   android:animateLayoutChanges="false"
-                   android:layout_gravity="center_vertical"
-                    />
-                
+
+                <LinearLayout
+                    android:id="@+id/linearVideoHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/txtCameraView"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:animateLayoutChanges="false"
+                        android:text="Loading..." />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/listMessages"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:scrollbars="horizontal"
+                    android:visibility="visible" />
             </LinearLayout>
 
-            <ListView
-                android:id="@+id/listMessages"
+            <TextView
+                android:id="@+id/agentIsTyping"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:divider="@null"
-                android:dividerHeight="0dp"
-                android:layout_weight="3"
-                android:visibility="visible"
-                android:scrollbars="horizontal" />
-        </LinearLayout>
-        
-        <TextView 
-            android:id="@+id/agentIsTyping"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Agent is typing..." 
-            android:visibility="gone"
-            android:paddingLeft="4dp"
-            android:textStyle="bold"
-            android:gravity="bottom" />
-        
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#bdbdbd" />
-    
-        <LinearLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="bottom"
-            android:orientation="horizontal" >
-    
-            <EditText
-                android:id="@+id/chatET"
-                android:layout_width="0dip"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:gravity="top"
-                android:hint="Type to compose"
-                android:background="#00000000"
+                android:gravity="bottom"
                 android:paddingLeft="4dp"
-                android:scrollHorizontally="true" >
-            </EditText>
-            
+                android:text="Agent is typing..."
+                android:textStyle="bold"
+                android:visibility="gone" />
+
             <View
-            android:layout_width="1dp"
-            android:layout_height="24dp"
-            android:layout_gravity="center_vertical"
-            android:background="#bdbdbd" />
-    
-            <Button
-                android:id="@+id/sendBtn"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#bdbdbd" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="SEND"
-                android:enabled="false"
-                android:background="#fcfcfc"
-                android:textColor="#3d3d3d"/>
+                android:gravity="bottom"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/chatET"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="#00000000"
+                    android:gravity="top"
+                    android:hint="Type to compose"
+                    android:paddingLeft="4dp"
+                    android:scrollHorizontally="true" >
+                </EditText>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#bdbdbd" />
+
+                <Button
+                    android:id="@+id/sendBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#fcfcfc"
+                    android:enabled="false"
+                    android:text="SEND"
+                    android:textColor="#3d3d3d" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>

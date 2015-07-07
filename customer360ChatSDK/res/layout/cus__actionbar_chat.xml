@@ -53,8 +53,7 @@
                     android:paddingBottom="@dimen/cus_actbar_padding_default"
                     android:paddingTop="@dimen/cus_actbar_padding_default"
                     android:text="CCAvenue"
-                    android:textColor="@color/cus_actbar_txtcolor_holo_light"
-                    android:textSize="@dimen/cus_actbar_tittle_textsize" />
+                    android:textColor="@color/cus_actbar_txtcolor_holo_light" />
             </LinearLayout>
         </RelativeLayout>
         <ImageView

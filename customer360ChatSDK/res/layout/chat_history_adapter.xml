@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:gravity="center">
+    
+    <ImageView 
+        android:id="@+id/imgMessage"
+        android:src="@drawable/previous_chat_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp" />
+    
+    <TextView android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/imgMessage"
+        android:layout_marginLeft="8dp" />
+    
+    <TextView android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="May13, 04:04 AM"
+        android:layout_toRightOf="@+id/imgMessage"
+        android:layout_below="@+id/txtMessage"
+        android:layout_marginLeft="8dp" />
+    
+    <ImageView 
+        android:id="@+id/imgMessageArrow"
+        android:src="@drawable/chat_arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"/>
+
+</RelativeLayout>

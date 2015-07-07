@@ -28,8 +28,8 @@ public final class R {
          */
         public static int cus_atdcftdc_red=0x7f040013;
         public static int cus_blackTranslucent=0x7f040004;
+        public static int cus_form_background=0x7f040015;
         public static int cus_roundshape_grey=0x7f04000a;
-        public static int cus_text_color=0x7f040015;
         /**  fragThanyou 
          */
         public static int cus_thankyou_info_bg_grey=0x7f04000d;
@@ -120,6 +120,7 @@ public final class R {
         public static int cus_atlftl_tv_text_textSize=0x7f050044;
         public static int cus_atlftl_v_divider_layout_height=0x7f050048;
         public static int cus_divider_height=0x7f050005;
+        public static int cus_form_layout_padding=0x7f050058;
         public static int cus_ftyl_btn_Close_layout_marginTop=0x7f050052;
         public static int cus_ftyl_btn_Close_layout_padding=0x7f050053;
         public static int cus_ftyl_btn_Close_layout_width=0x7f050051;
@@ -169,27 +170,31 @@ public final class R {
         public static int cus_ic_ab_back_holo_light=0x7f02001b;
         public static int cus_livesupportlogo=0x7f02001c;
         public static int cus_message=0x7f02001d;
-        public static int cus_retry=0x7f02001e;
-        public static int cus_retry_selected=0x7f02001f;
-        public static int cus_round_shape_cusblue=0x7f020020;
-        public static int cus_round_shape_default=0x7f020021;
-        public static int cus_round_shape_red=0x7f020022;
-        public static int cus_round_shape_thankyou=0x7f020023;
-        public static int cus_selector_acfcl_retry_grey=0x7f020024;
-        public static int cus_selector_act_btn_submit_grey=0x7f020025;
-        public static int cus_selector_actionbar_default=0x7f020026;
-        public static int cus_selector_ap_btns_defaukt_white=0x7f020027;
-        public static int cus_selector_default=0x7f020028;
-        public static int cus_sendbtn=0x7f020029;
-        public static int cus_ticket_create_rounded_corner=0x7f02002a;
-        public static int custom_progress_bar=0x7f02002b;
-        public static int ic_launcher=0x7f02002c;
-        public static int ic_launcher_customer=0x7f02002d;
-        public static int inactive_ticket=0x7f02002e;
-        public static int loadergif=0x7f02002f;
-        public static int loading_new=0x7f020030;
-        public static int progress=0x7f020031;
-        public static int tick_mark=0x7f020032;
+        public static int cus_require_asterisk=0x7f02001e;
+        public static int cus_retry=0x7f02001f;
+        public static int cus_retry_selected=0x7f020020;
+        public static int cus_round_shape_cusblue=0x7f020021;
+        public static int cus_round_shape_default=0x7f020022;
+        public static int cus_round_shape_red=0x7f020023;
+        public static int cus_round_shape_thankyou=0x7f020024;
+        public static int cus_selector_acfcl_retry_grey=0x7f020025;
+        public static int cus_selector_act_btn_submit_grey=0x7f020026;
+        public static int cus_selector_actionbar_default=0x7f020027;
+        public static int cus_selector_ap_btns_defaukt_white=0x7f020028;
+        public static int cus_selector_default=0x7f020029;
+        public static int cus_sendbtn=0x7f02002a;
+        public static int cus_ticket_create_rounded_corner=0x7f02002b;
+        public static int custom_progress_bar=0x7f02002c;
+        public static int download_icon_gray=0x7f02002d;
+        public static int download_icon_white=0x7f02002e;
+        public static int edittextborder=0x7f02002f;
+        public static int ic_launcher=0x7f020030;
+        public static int ic_launcher_customer=0x7f020031;
+        public static int inactive_ticket=0x7f020032;
+        public static int loadergif=0x7f020033;
+        public static int loading_new=0x7f020034;
+        public static int progress=0x7f020035;
+        public static int tick_mark=0x7f020036;
     }
     public static final class id {
         public static int apgl_rl_screenParentLayout2=0x7f090031;
@@ -259,7 +264,7 @@ public final class R {
         public static int cus_atdcftdcemt_tv_caption=0x7f09003f;
         public static int cus_atdcftdcemt_v_emptyspace=0x7f090035;
         public static int cus_atlftl_iv_NewTicket=0x7f090050;
-        public static int cus_atlftl_iv_arrow=0x7f09005a;
+        public static int cus_atlftl_iv_arrow=0x7f09005b;
         public static int cus_atlftl_iv_retry=0x7f090054;
         public static int cus_atlftl_ll_NoItemsFoundWrapper=0x7f09004f;
         public static int cus_atlftl_ll_RetryWrapper=0x7f090053;
@@ -272,17 +277,17 @@ public final class R {
         public static int cus_atlftl_tv_NoItemsFoundText=0x7f090051;
         public static int cus_atlftl_tv_retry=0x7f090055;
         public static int cus_atlftl_tv_text=0x7f090059;
-        public static int cus_efl_layoutToBeReplaced=0x7f09005b;
-        public static int cus_ftyl_btn_Close=0x7f090065;
-        public static int cus_ftyl_iv_tickmark=0x7f09005f;
-        public static int cus_ftyl_rl_InfoWrapper=0x7f090062;
-        public static int cus_ftyl_rl_InfoWrapper_bg=0x7f090061;
-        public static int cus_ftyl_rl_screenparent=0x7f09005c;
-        public static int cus_ftyl_rl_svChild=0x7f09005e;
-        public static int cus_ftyl_sv=0x7f09005d;
-        public static int cus_ftyl_tv_HelpDeskText=0x7f090064;
-        public static int cus_ftyl_tv_RefText=0x7f090063;
-        public static int cus_ftyl_tv_ThankYouText=0x7f090060;
+        public static int cus_efl_layoutToBeReplaced=0x7f09005c;
+        public static int cus_ftyl_btn_Close=0x7f090066;
+        public static int cus_ftyl_iv_tickmark=0x7f090060;
+        public static int cus_ftyl_rl_InfoWrapper=0x7f090063;
+        public static int cus_ftyl_rl_InfoWrapper_bg=0x7f090062;
+        public static int cus_ftyl_rl_screenparent=0x7f09005d;
+        public static int cus_ftyl_rl_svChild=0x7f09005f;
+        public static int cus_ftyl_sv=0x7f09005e;
+        public static int cus_ftyl_tv_HelpDeskText=0x7f090065;
+        public static int cus_ftyl_tv_RefText=0x7f090064;
+        public static int cus_ftyl_tv_ThankYouText=0x7f090061;
         public static int cus_sv=0x7f090014;
         public static int cusab_iv_logo=0x7f090023;
         public static int cusab_iv_up=0x7f090022;
@@ -291,10 +296,14 @@ public final class R {
         public static int cusab_rl_actionbar=0x7f09001f;
         public static int cusab_tv_tittle=0x7f090024;
         public static int cusai_iv_Attachment=0x7f090025;
-        public static int loadingPanel=0x7f090067;
-        public static int progres=0x7f090066;
-        public static int progressbarlayout=0x7f090068;
+        public static int loadingPanel=0x7f090068;
+        public static int progres=0x7f090067;
+        public static int progressbarlayout=0x7f090069;
         public static int progressbarloading=0x7f090041;
+        public static int rootLayout=0x7f09006c;
+        public static int rootLayoutScrollView=0x7f09006b;
+        public static int rootParent=0x7f09006a;
+        public static int txtAgentReplyCount=0x7f09005a;
         public static int txtFeedback=0x7f090019;
         public static int txtName=0x7f090017;
     }
@@ -319,6 +328,7 @@ public final class R {
         public static int custom_progress_dialog=0x7f030011;
         public static int progress_dialog_animation=0x7f030012;
         public static int progressbarlayout=0x7f030013;
+        public static int ticket_form=0x7f030014;
     }
     public static final class menu {
         public static int main=0x7f080000;

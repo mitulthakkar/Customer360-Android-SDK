@@ -32,6 +32,6 @@
     <color name="cus_atdcftdc_red">#CC0000</color>
     <color name="cus_atdcftdc_bubble_default">#2B3B61</color>
     
-    <color name="cus_text_color">#000000</color>
+    <color name="cus_form_background">#FFFFFF</color>
 
 </resources>
