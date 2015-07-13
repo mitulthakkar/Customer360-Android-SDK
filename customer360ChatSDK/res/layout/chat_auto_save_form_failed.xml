@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cus_prechatform_backgroud"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/txtFailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oops! Something went wrong."
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
