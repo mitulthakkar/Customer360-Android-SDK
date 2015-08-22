@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fcfcfc"
+    android:background="#ffffff"
     android:orientation="vertical" >
+    
+    <include layout="@layout/view_custom_progress_dialog"/>
     
     <TextView 
         android:id="@+id/txtRecordNotFound"
@@ -37,10 +39,11 @@
 
             <ImageView
                 android:id="@+id/imgWaitingScreen"
-                android:layout_width="280dp"
-                android:layout_height="240dp"
-                android:layout_centerInParent="true"
-                android:src="@drawable/waitingscr" />
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_margin_medium_high"
+                android:src="@drawable/new_waiting" />
             
             <TextView
                     android:layout_width="wrap_content"
@@ -48,9 +51,9 @@
                     android:text="Please wait. You are in Queue."
                     android:layout_centerHorizontal="true"
                     android:layout_below="@+id/imgWaitingScreen"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
-            <LinearLayout
+            <!-- <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -67,7 +70,7 @@
                     android:layout_height="wrap_content"
                     android:text="Customer360"
                     android:textStyle="bold" />
-            </LinearLayout>
+            </LinearLayout> -->
         </RelativeLayout>
 
         <LinearLayout
@@ -109,7 +112,10 @@
                     android:divider="@null"
                     android:dividerHeight="0dp"
                     android:scrollbars="horizontal"
-                    android:visibility="visible" />
+                    android:visibility="visible"
+                    android:drawSelectorOnTop="false"
+                    android:listSelector="@android:color/transparent"               
+					android:cacheColorHint="@android:color/transparent" />
             </LinearLayout>
 
             <TextView
@@ -122,46 +128,56 @@
                 android:textStyle="bold"
                 android:visibility="gone" />
 
-            <View
+            <!-- <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#bdbdbd" />
+                android:background="#999999" /> -->
 
             <LinearLayout
                 android:id="@+id/linearLayout2"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="56dp"
                 android:gravity="bottom"
-                android:orientation="horizontal" >
+                android:orientation="horizontal"
+                android:background="#F4F4F4" >
+                
+                <ImageView 
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:visibility="gone"
+                    android:src="@drawable/camera"/>
 
                 <EditText
                     android:id="@+id/chatET"
                     android:layout_width="0dip"
                     android:layout_height="wrap_content"
+                    android:maxHeight="72dp"
                     android:layout_weight="2"
-                    android:background="#00000000"
                     android:gravity="top"
-                    android:hint="Type to compose"
+                    android:hint="Type a message"
                     android:paddingLeft="4dp"
-                    android:scrollHorizontally="true" >
-                </EditText>
+                    android:scrollHorizontally="true"
+                    android:layout_gravity="center_vertical" />
 
-                <View
+                <!-- <View
                     android:layout_width="1dp"
                     android:layout_height="24dp"
                     android:layout_gravity="center_vertical"
-                    android:background="#bdbdbd" />
+                    android:background="#bdbdbd" /> -->
 
                 <Button
                     android:id="@+id/sendBtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#fcfcfc"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
                     android:enabled="false"
-                    android:text="SEND"
+                    android:background="@drawable/send_normal"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="12dp"
                     android:textColor="#3d3d3d" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

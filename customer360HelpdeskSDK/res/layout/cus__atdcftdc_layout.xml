@@ -19,7 +19,7 @@
         android:id="@+id/cus_atdcftdc_sv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/cus_atdcftdc_v_divided" >
+        android:layout_above="@+id/cus_atdcftdc_ll_InputWrapper" >
 
         <LinearLayout
             android:id="@+id/cus_atdcftdc_ll_PlaceHolderConvi"
@@ -64,22 +64,65 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <View
+    <!--
+        <View
         android:id="@+id/cus_atdcftdc_v_divided"
         android:layout_width="match_parent"
         android:layout_height="@dimen/cus_atdcftdc_v_divided_layout_height"
         android:layout_above="@+id/cus_atdcftdc_ll_InputWrapper"
         android:background="#D7D7D7" />
+    -->
 
     <LinearLayout
         android:id="@+id/cus_atdcftdc_ll_InputWrapper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#EEEEEE"
+        android:background="#F4F4F4"
         android:gravity="center_vertical"
         android:orientation="horizontal" >
 
+        <ImageView
+            android:id="@+id/cus_send_attachment"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/camera"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/cus_atdcftdc_et_Input"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:maxHeight="72dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="4dp"
+            android:layout_weight="2"
+            android:gravity="top"
+            android:hint="Type a message"
+            android:paddingLeft="4dp"
+            android:scrollHorizontally="true" />
+
+        <!--
+                     <View
+                    android:layout_width="1dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#bdbdbd" />
+        -->
+
+        <ImageView
+            android:id="@+id/cus_atdcftdc_iv_SendBtn"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/send_normal"
+            android:enabled="false"
+            android:textColor="#3d3d3d" />
+
+        <!--
         <EditText
             android:id="@+id/cus_atdcftdc_et_Input"
             android:layout_width="match_parent"
@@ -100,6 +143,7 @@
             android:background="#EEEEEE"
             android:padding="8dp"
             android:src="@drawable/cus_sendbtn" />
+        -->
     </LinearLayout>
 
 </RelativeLayout>

@@ -1,5 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:textColor="@color/cus_default_backgroud_color" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin_low" >
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:maxLength="32"
+            android:textColor="#606060"
+            android:textSize="@dimen/default_text_size_plus_2" />
+
+        <TextView
+            android:id="@+id/txtLastConversation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMessage"
+            android:text="last message"
+            android:maxLength="32"
+            android:layout_marginTop="2dp"
+            android:textColor="#a9a9a9"
+            android:textSize="@dimen/default_text_size" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="May13, 04:04 AM"
+            android:textColor="#a9a9a9"
+            android:textSize="@dimen/default_text_size_minus_2" />
+
+        <RelativeLayout
+            android:id="@+id/replyCountParent"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtTime"
+            android:background="@drawable/cus_circular_shape"
+            android:layout_marginTop="4dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/replyCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_centerInParent="true"
+                android:textColor="@color/cus_default_text_color"
+                android:textSize="@dimen/default_text_size_plus_1" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="80dp"
     android:gravity="center">
@@ -35,4 +97,4 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="16dp"/>
 
-</RelativeLayout>
+</RelativeLayout> -->

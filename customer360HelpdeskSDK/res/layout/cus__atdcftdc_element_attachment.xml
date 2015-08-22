@@ -18,8 +18,8 @@
 
         <ImageView
             android:id="@+id/cus_atdcftdcemt_iv_Image"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:scaleType="centerCrop" />
     </RelativeLayout>
 

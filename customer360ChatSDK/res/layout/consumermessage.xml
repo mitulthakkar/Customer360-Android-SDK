@@ -1,149 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-   android:layout_width="match_parent"
-   android:orientation="vertical"
-   android:layout_height="match_parent"  >
-    
-    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
         android:id="@+id/agentLeftBlock"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"
         android:layout_marginTop="8dp"
-	    android:layout_marginBottom="16dp"
         android:gravity="center"
-        android:orientation="vertical" >
-        <TextView 
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
             android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:layout_marginBottom="4dp"
-        	android:text="Agent left the chat xyz" />
-        <Button 
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Agent left the chat" />
+
+        <Button
             android:id="@+id/pleaseRateUs"
             android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:background="#2b3b61"
-        	android:textColor="#fff"
-        	android:padding="4dp"
-        	android:text="Please Rate Us!" />
+            android:layout_height="wrap_content"
+            android:background="#2b3b61"
+            android:padding="4dp"
+            android:text="Please Rate Us!"
+            android:textColor="#fff" />
     </LinearLayout>
-    
+
     <LinearLayout
         android:id="@+id/agentBlock"
-	    android:layout_width="wrap_content"
-	    android:layout_height="match_parent"
-	    android:layout_gravity="center_vertical|left"
-	    android:layout_marginTop="8dp"
-	    android:layout_marginBottom="16dp"
-	    android:animateLayoutChanges="true"
-	    android:visibility="visible"
-	    >
-        <ImageView
-            android:id="@+id/agentImg"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content" 
-	        android:layout_margin="4dp"
-	        android:src="@drawable/agentimg"/>
-        
-        <LinearLayout 
-            	android:layout_width="match_parent"
-            	android:minWidth="120dp"
-		        android:layout_height="wrap_content"
-		        android:background="@drawable/roundedcornersagent"
-		        android:layout_weight="2"
-		        android:layout_marginRight="40dp"
-		        android:orientation="vertical" >
-	        <TextView
-		        android:text="Agent"
-		        android:id="@+id/agentMessageHeader"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:textColor="#858585"
-		        android:textSize="@dimen/cus_atdcftdcemt_tv_Name_textSize"
-		        />
-		    <TextView
-		        android:text="agent message"
-		        android:id="@+id/agentMessage"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:textColor="#3d3d3d"
-		        android:autoLink="web|email"
-		        android:textSize="@dimen/cus_atdcftdcemt_tv_Name_textSize"
-		        />
-	    </LinearLayout>
-	</LinearLayout>
-        
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="@dimen/activity_margin_low"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="0dp"
+        android:animateLayoutChanges="true"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtTimeAgent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                
+                android:padding="8dp"
+                
+                
+                android:text="13:13"
+                android:textColor="#66000000"
+                android:textSize="@dimen/default_text_size_minus_2" />
+
+            <TextView
+                android:id="@+id/agentMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left|center_vertical"
+                
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                
+                android:text="Agent message"
+                android:textColor="#555555"
+                android:autoLink="web|email"
+                android:textSize="@dimen/default_text_size_plus_2" />
+        </FrameLayout>
+    </LinearLayout>
+
     <LinearLayout
         android:id="@+id/consumerBlock"
-	    android:layout_width="wrap_content"
-	    android:layout_height="match_parent"
-	    android:layout_gravity="center_vertical|right"
-	    android:layout_marginTop="8dp"
-	    android:layout_marginBottom="16dp"
-	    android:visibility="gone"
-	    >
-        <LinearLayout 
-            	android:id="@+id/roundedCornerConsumer"
-            	android:layout_width="match_parent"
-            	android:minWidth="120dp"
-		        android:layout_height="wrap_content"
-		        android:background="@drawable/roundedcornersconsumer"
-		        android:layout_weight="2"
-		        android:layout_marginLeft="40dp"
-		        android:orientation="vertical" >
-		    <TextView
-		        android:text="Me"
-		        android:id="@+id/consumerMessageHeader"
-		        android:layout_marginLeft="16dp"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:textColor="#b8bfe3"
-		        android:textSize="@dimen/cus_atdcftdcemt_tv_Name_textSize"
-		        />
-		    <TextView
-		        android:text="consumer message"
-		        android:layout_marginLeft="16dp"
-		        android:id="@+id/consumerMessage"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:textColor="#fcfcfc"
-		        android:autoLink="web|email"
-		        android:textSize="@dimen/cus_atdcftdcemt_tv_Name_textSize"
-		        />
-	    </LinearLayout>
-	    
-	    <ImageView
-	        android:layout_width="40dp"
-	        android:layout_height="40dp" 
-	        android:layout_margin="4dp"
-	        android:src="@drawable/consumerimg"/>
-	</LinearLayout> 
-    
-</LinearLayout>
-
-<!-- <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal" >
-    <ImageView
-        android:id="@+id/ivProfileLeft"
-        android:contentDescription="Other profile pic"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:src="@drawable/ic_launcher" />
-    <TextView
-        android:textSize="18sp"
-        android:id="@+id/tvBody"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="message" >
-    </TextView>
-    <ImageView
-        android:id="@+id/ivProfileRight"
-        android:contentDescription="My Profile Pic"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:src="@drawable/ic_launcher"
-        android:layout_alignParentRight="true" />
-</RelativeLayout> -->
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="@dimen/activity_margin_low"
+        android:layout_marginTop="0dp"
+        android:visibility="visible" >
+            <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <!-- <TextView
+                android:id="@+id/txtTimeCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:padding="4dp"
+                android:text="13:13"
+                android:textColor="#20535252"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:layout_marginRight="12dp" /> -->
+            
+            <TextView
+                android:id="@+id/txtTimeCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:padding="8dp"
+                android:text="13:13"
+                android:textColor="#66FFFFFF"
+                android:textSize="@dimen/default_text_size_minus_2" />
+
+            <TextView
+                android:id="@+id/consumerMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left|center_vertical"
+                
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                
+                android:paddingLeft="8dp"
+                android:paddingRight="16dp"
+                
+                android:text="Customer message"
+                android:textColor="#FFFFFF"
+                android:autoLink="web|email"
+                android:textSize="@dimen/default_text_size_plus_2" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

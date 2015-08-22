@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	
-    <dimen name="cus_actbar_height">48dp</dimen>
+    <dimen name="cus_actbar_height">56dp</dimen>
     <dimen name="cus_actbar_padding_default">8dp</dimen>
     <dimen name="cus_actbar_tittle_textsize">20sp</dimen>
 	<dimen name="cusab_ll_actionbar_home_paddingRight">10sp</dimen>
@@ -62,7 +62,7 @@
 	<dimen name="cus_atdcftdc_iv_retry_layout_width">100dp</dimen>
 	<dimen name="cus_atdcftdc_iv_retry_layout_height">100dp</dimen>
 	<dimen name="cus_atdcftdc_tv_retry_textSize">22sp</dimen>
-	<dimen name="cus_atdcftdc_v_divided_layout_height">2dp</dimen>
+	<dimen name="cus_atdcftdc_v_divided_layout_height">0dp</dimen>
 	<dimen name="cus_atdcftdc_ll_InputWrapper_layout_height">48dp</dimen>
 	<dimen name="cus_atdcftdc_et_Input_padding">8dp</dimen>
 	<dimen name="cus_atdcftdc_iv_SendBtn_layout_width">48dp</dimen>
@@ -87,8 +87,9 @@
 	<dimen name="cus_atlftl_v_divider_layout_height">1dp</dimen>
 	
 	<dimen name="cus_ftyl_iv_tickmark_layout_marginTop">70dp</dimen>
-	<dimen name="cus_ftyl_tv_ThankYouText_layout_marginTop">8dp</dimen>
-	<dimen name="cus_ftyl_tv_ThankYouText_textSize">25sp</dimen>
+	<dimen name="cus_ftyl_tv_ThankYouText_layout_marginTop">32dp</dimen>
+	<dimen name="cus_ftyl_tv_ThankYouText_textSize">34sp</dimen>
+	<dimen name="cus_ftyl_tv_ThankYouText_Desc_textSize">20sp</dimen>
 	<dimen name="cus_ftyl_rl_InfoWrapper_bg_layout_margin">24dp</dimen>
 	<dimen name="cus_ftyl_rl_InfoWrapper_bg_padding">2dp</dimen>
 	<dimen name="cus_ftyl_rl_InfoWrapper_padding">16dp</dimen>
@@ -107,5 +108,21 @@
 	<dimen name="cus_txt_default_size">16sp</dimen>
 	
 	<dimen name="cus_form_layout_padding">10dp</dimen>
+	
+	<dimen name="activity_margin_very_low">4dp</dimen>
+	<dimen name="activity_margin_default">8dp</dimen>
+	<dimen name="activity_margin_low">16dp</dimen>
+	<dimen name="activity_margin_medium_low">24dp</dimen>
+	<dimen name="activity_margin_medium_high">32dp</dimen>
+	<dimen name="activity_margin_high">48dp</dimen>
+	
+	<dimen name="activity_header_back_logo_width_height">14dp</dimen>
+	
+	<dimen name="default_text_size">14sp</dimen>
+	<dimen name="default_text_size_plus_1">15sp</dimen>
+	<dimen name="default_text_size_plus_2">16sp</dimen>
+	<dimen name="default_text_size_minus_2">12sp</dimen>
+	<dimen name="default_text_size_plus_4">18sp</dimen>
+	<dimen name="default_text_size_plus_6">20sp</dimen>
 
 </resources>

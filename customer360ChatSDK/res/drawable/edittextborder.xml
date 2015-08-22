@@ -1,6 +1,34 @@
-<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape>
+            <solid android:color="#dbdbdb" />
+        </shape>
+    </item>
+
+    <!-- main color -->
+    <item
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp">
+        <shape>
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+
+    <!-- draw another block to cut-off the left and right bars -->
+    <item android:bottom="1dp">
+        <shape>
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+
+</layer-list>
+
+<!--
+     <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
        <solid android:color="#ffffff" />
        <stroke android:width="1dip" android:color="#CCCCCC"/>
        <corners
         android:radius="5dip" />
     </shape>
+-->

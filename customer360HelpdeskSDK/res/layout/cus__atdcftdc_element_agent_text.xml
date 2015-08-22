@@ -4,54 +4,60 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical" >
-
-    <LinearLayout
+	
+    <RelativeLayout
         android:id="@+id/cus_atdcftdcemt_ll_contentWrapper"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:weightSum="1"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+         >
 
-        <View
+        <!-- <View
             android:id="@+id/cus_atdcftdcemt_v_emptyspace"
             android:layout_width="@dimen/cus_atdcftdcemt_v_emptyspace_layout_width"
             android:layout_height="match_parent"
             android:layout_weight="0.2"
-            android:visibility="visible" />
+            android:visibility="visible" /> -->
 
         <LinearLayout
             android:id="@+id/cus_atdcftdcemt_ll_contentWrapper2"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/cus_atdcftdcemt_ll_contentWrapper2_layout_margin"
+            android:layout_marginRight="@dimen/activity_margin_default"
+            android:layout_marginTop="@dimen/cus_atdcftdcemt_ll_contentWrapper2_layout_margin"
+            android:layout_marginLeft="16dp"
             android:layout_weight="0.8"
-            android:background="@drawable/cus_round_shape_cusblue"
+            android:minWidth="120dp"
             android:gravity="center_vertical"
             android:orientation="vertical"
-            android:padding="@dimen/cus_atdcftdcemt_ll_contentWrapper2_padding" >
+            android:paddingLeft="@dimen/cus_atdcftdcemt_ll_contentWrapper2_padding"
+            android:paddingBottom="@dimen/cus_atdcftdcemt_ll_contentWrapper2_padding"
+            android:paddingRight="@dimen/cus_atdcftdcemt_ll_contentWrapper2_padding"
+            android:paddingTop="4dp"
+            android:layout_alignParentRight="true" >
 
-            <View
+           <!--  <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginBottom="10dp"
                 android:background="#C8C8C8"
-                android:visibility="gone" />
+                android:visibility="gone" /> -->
 
             <LinearLayout
                 android:id="@+id/cus_atdcftdcemt_ll_contentWrapper4"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="horizontal" >
 
                 <LinearLayout
                     android:id="@+id/cus_atdcftdcemt_ll_contentWrapper3"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    android:gravity="center_vertical"
                     android:orientation="vertical" >
 
                     <TextView
@@ -62,17 +68,17 @@
                         android:textColor="#fff"
                         android:alpha="0.7"
                         android:textStyle="bold"
-                        android:textSize="@dimen/cus_atdcftdcemt_tv_Name_textSize" />
+                        android:visibility="gone"
+                        android:textSize="@dimen/default_text_size_plus_2" />
 
                     <TextView
                         android:id="@+id/cus_atdcftdcemt_tv_Text"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
                         android:layout_weight="1"
-                        android:text="sample Ticket Tittl e text"
+                        android:text="sample Ticket Title text"
                         android:textColor="#fff"
-                        android:textSize="@dimen/cus_atdcftdcemt_tv_Text_textSize" />
+                        android:textSize="@dimen/default_text_size_plus_2" />
                 </LinearLayout>
 
                 <ImageView
@@ -80,6 +86,7 @@
                     android:layout_width="@dimen/cus_atdcftdcemt_iv_Icon_layout_width"
                     android:layout_height="@dimen/cus_atdcftdcemt_iv_Icon_layout_height"
                     android:layout_marginRight="4dp"
+                    android:visibility="gone"
                     android:src="@drawable/circle_customert" />
             </LinearLayout>
 
@@ -102,6 +109,17 @@
                 <include layout="@layout/cus__atdcftdc_element_attachment" />
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
 
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cus_atdcftdcemt_ll_contentWrapper2"
+            android:layout_below="@+id/cus_atdcftdcemt_ll_contentWrapper2"
+            android:text=""
+            android:textColor="#59000000"
+            android:textSize="@dimen/default_text_size_minus_2" />
+        
+    </RelativeLayout>
+    
 </LinearLayout>

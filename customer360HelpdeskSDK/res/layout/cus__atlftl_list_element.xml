@@ -1,5 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/cus_default_backgroud_color" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin_low" >
+
+        <TextView
+            android:id="@+id/cus_atlftl_tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:maxLength="32"
+            android:textColor="@color/cus_listing_text_color"
+            android:textSize="@dimen/default_text_size_plus_2" />
+
+        <TextView
+            android:id="@+id/txtLastConversation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cus_atlftl_tv_text"
+            android:text=""
+            android:maxLength="32"
+            android:layout_marginTop="2dp"
+            android:textSize="@dimen/default_text_size" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="May13, 04:04 AM"
+            android:textColor="#b3b3b3"
+            android:textSize="@dimen/default_text_size_minus_2" />
+
+        <RelativeLayout
+            android:id="@+id/replyCountParent"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtTime"
+            android:background="@drawable/cus_circular_shape"
+            android:layout_marginTop="4dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/txtAgentReplyCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_centerInParent="true"
+                android:textColor="@color/cus_default_text_color"
+                android:textSize="@dimen/default_text_size_minus_2" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:gravity="center">
+    
+    <ImageView 
+        android:id="@+id/imgMessage"
+        android:src="@drawable/previous_chat_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp" />
+    
+    <TextView android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/imgMessage"
+        android:layout_marginLeft="8dp" />
+    
+    <TextView android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="May13, 04:04 AM"
+        android:layout_toRightOf="@+id/imgMessage"
+        android:layout_below="@+id/txtMessage"
+        android:layout_marginLeft="8dp" />
+    
+    <ImageView 
+        android:id="@+id/imgMessageArrow"
+        android:src="@drawable/chat_arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"/>
+
+</RelativeLayout> -->
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/cus_atlftl_ll_attachmentWrapper"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -40,7 +138,7 @@
             android:text="sample Ticket Title text"
             android:textSize="@dimen/cus_atlftl_tv_text_textSize" />
         
-        <!-- <TextView
+        <TextView
             android:id="@+id/txtTicketStatus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,7 +148,7 @@
             android:singleLine="true"
             android:src="@drawable/cus_action_cancel"
             android:visibility="gone"
-            android:text="(ticket status)" /> -->
+            android:text="(ticket status)" />
         
         </LinearLayout>
         
@@ -68,10 +166,10 @@
             android:src="@drawable/arrow" />
     </LinearLayout>
 
-<!--     <View
+    <View
         android:id="@+id/cus_atlftl_v_divider"
         android:layout_width="match_parent"
         android:layout_height="@dimen/cus_atlftl_v_divider_layout_height"
         android:background="#C8C8C8" />
- -->
-</LinearLayout>
+
+</LinearLayout> -->

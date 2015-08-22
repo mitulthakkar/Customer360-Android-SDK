@@ -3,14 +3,16 @@
     android:id="@+id/rootParent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cus_prechatform_backgroud"
+    android:background="@color/cus_default_backgroud_color"
     android:orientation="vertical" >
+    
+    <include layout="@layout/view_custom_progress_dialog"/>
 
     <ListView
         android:id="@+id/listViewChatHistory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="visible" />
+        android:visibility="gone" />
     
     <TextView 
         android:id="@+id/txtRecordNotFound"

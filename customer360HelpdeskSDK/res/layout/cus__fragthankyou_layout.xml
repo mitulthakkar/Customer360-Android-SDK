@@ -21,6 +21,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/cus_ftyl_iv_tickmark_layout_marginTop"
+                android:visibility="gone"
                 android:src="@drawable/tick_mark" />
 
             <TextView
@@ -31,7 +32,7 @@
                 android:layout_marginTop="@dimen/cus_ftyl_tv_ThankYouText_layout_marginTop"
                 android:gravity="center"
                 android:text="@string/cus_ThankYou"
-                android:textColor="@color/cus_actl_textcolor_grey"
+                android:textColor="#5c5b5c"
                 android:textSize="@dimen/cus_ftyl_tv_ThankYouText_textSize" />
 
             <LinearLayout
@@ -39,8 +40,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/cus_ftyl_tv_ThankYouText"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/cus_ftyl_tv_ThankYouText_layout_marginTop"
                 android:layout_marginLeft="@dimen/cus_ftyl_rl_InfoWrapper_bg_layout_margin"
                 android:layout_marginRight="@dimen/cus_ftyl_rl_InfoWrapper_bg_layout_margin"
                 android:orientation="vertical"
@@ -50,7 +49,6 @@
                     android:id="@+id/cus_ftyl_rl_InfoWrapper"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/cus_round_shape_thankyou"
                     android:gravity="center_horizontal"
                     android:orientation="vertical"
                     android:padding="8dp" >
@@ -61,6 +59,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="Thank You"
+                        android:textSize="@dimen/cus_ftyl_tv_ThankYouText_Desc_textSize"
                         android:textColor="@color/cus_actl_textcolor_grey" />
 
                     <TextView
@@ -69,6 +68,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:text="Thank You"
+                        android:textSize="@dimen/cus_ftyl_tv_ThankYouText_Desc_textSize"
                         android:textColor="@color/cus_actl_textcolor_grey" />
                 </LinearLayout>
             </LinearLayout>
@@ -83,6 +83,7 @@
                 android:layout_marginTop="12dp"
                 android:background="@drawable/cus_selector_act_btn_submit_grey"
                 android:text="@string/cus_Close"
+                android:visibility="gone"
                 android:textColor="@color/cus_whitet" />
         </RelativeLayout>
     </ScrollView>

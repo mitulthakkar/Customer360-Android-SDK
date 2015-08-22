@@ -3,7 +3,7 @@
     android:id="@+id/rootParent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cus_prechatform_backgroud"
+    android:background="@color/cus_default_backgroud_color"
     android:orientation="vertical" >
 
     <ScrollView
@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="@dimen/cus_prechatform_layout_padding" >
+            android:padding="@dimen/activity_margin_low" >
 
             <!-- Content here -->
         </LinearLayout>

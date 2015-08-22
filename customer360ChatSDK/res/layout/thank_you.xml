@@ -2,15 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fcfcfc" >
+    android:background="@color/cus_activity_bgcolor_grey" >
 
-    <ImageView
+    <!-- <ImageView
         android:id="@+id/imgThankyouScreen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:src="@drawable/thank_you" />
+        android:src="@drawable/thank_you" /> -->
 
     <TextView
         android:id="@+id/txtThankYou"
@@ -19,25 +19,29 @@
         android:layout_below="@+id/imgThankyouScreen"
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
-        android:padding="16dp"
         android:text="Thank You"
         android:textAlignment="center"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textSize="@dimen/cus_ftyl_tv_ThankYouText_textSize"
+        android:layout_marginTop="@dimen/activity_margin_medium_high"
+        android:textColor="@color/cus_grey_text_color" />
 
     <TextView
         android:id="@+id/txtTicketMessageIfSet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtThankYou"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
         android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
         android:visibility="gone"
-        android:text="Your Ticket Reference"
-        android:textAlignment="center" />
+        android:text="Your Chat Reference"
+        android:textAlignment="center"
+        android:textColor="@color/cus_grey_text_color"
+        android:textSize="@dimen/cus_ftyl_tv_ThankYouText_Desc_textSize"
+        android:layout_marginTop="@dimen/activity_margin_default"
+        android:layout_marginLeft="@dimen/cus_ftyl_rl_InfoWrapper_bg_layout_margin"
+        android:layout_marginRight="@dimen/cus_ftyl_rl_InfoWrapper_bg_layout_margin" />
 
-    <Button
+    <!-- <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/txtPoweredBy"
@@ -55,6 +59,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="@string/powered_by_customer360" />
+        android:text="@string/powered_by_customer360" /> -->
 
 </RelativeLayout>

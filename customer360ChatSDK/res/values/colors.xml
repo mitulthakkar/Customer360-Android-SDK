@@ -32,6 +32,8 @@
     <color name="cus_atdcftdc_red">#CC0000</color>
     <color name="cus_atdcftdc_bubble_default">#2B3B61</color>
     
-    <color name="cus_prechatform_backgroud">#FFFFFF</color>
+    <color name="cus_default_backgroud_color">#FFFFFF</color>
+    <color name="cus_default_text_color">#FFFFFF</color>
+    <color name="cus_grey_text_color">#5c5b5c</color>
 
 </resources>
