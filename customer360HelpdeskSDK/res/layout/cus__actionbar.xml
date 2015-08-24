@@ -60,7 +60,8 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:text="New"
-            android:background="?android:attr/selectableItemBackground" />
+            android:background="?android:attr/selectableItemBackground"
+            android:visibility="gone" />
         
         <ImageView android:id="@+id/saveTicket"
             android:layout_width="@dimen/activity_margin_medium_low"
