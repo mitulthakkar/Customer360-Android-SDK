@@ -52,10 +52,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|right"
-                
-                android:padding="8dp"
-                
-                
+                android:paddingBottom="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
                 android:text="13:13"
                 android:textColor="#66000000"
                 android:textSize="@dimen/default_text_size_minus_2" />
@@ -67,18 +67,15 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_gravity="left|center_vertical"
-                
                 android:layout_marginLeft="0dp"
                 android:layout_marginTop="0dp"
-                
-                android:paddingTop="8dp"
+                android:autoLink="web|email"
                 android:paddingBottom="8dp"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
-                
+                android:paddingTop="8dp"
                 android:text="Agent message"
                 android:textColor="#555555"
-                android:autoLink="web|email"
                 android:textSize="@dimen/default_text_size_plus_2" />
         </FrameLayout>
     </LinearLayout>
@@ -93,13 +90,15 @@
         android:layout_marginRight="@dimen/activity_margin_low"
         android:layout_marginTop="0dp"
         android:visibility="visible" >
-            <FrameLayout
+
+        <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:orientation="horizontal" >
 
-            <!-- <TextView
+            <!--
+                 <TextView
                 android:id="@+id/txtTimeCustomer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -109,7 +108,8 @@
                 android:textColor="#20535252"
                 android:textSize="10dp"
                 android:textStyle="bold"
-                android:layout_marginRight="12dp" /> -->
+                android:layout_marginRight="12dp" />
+            -->
             
             <TextView
                 android:id="@+id/txtTimeCustomer"
@@ -128,20 +128,44 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_gravity="left|center_vertical"
-                
                 android:layout_marginLeft="0dp"
                 android:layout_marginTop="0dp"
-                
-                android:paddingTop="8dp"
+                android:autoLink="web|email"
                 android:paddingBottom="8dp"
-                
                 android:paddingLeft="8dp"
                 android:paddingRight="16dp"
-                
+                android:paddingTop="4dp"
                 android:text="Customer message"
                 android:textColor="#FFFFFF"
-                android:autoLink="web|email"
                 android:textSize="@dimen/default_text_size_plus_2" />
+
+            <!-- <TextView
+                android:id="@+id/txtTimeCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:padding="8dp"
+                android:text="13:13"
+                android:textColor="#66FFFFFF"
+                android:textSize="@dimen/default_text_size_minus_2" />
+
+            <TextView
+                android:id="@+id/consumerMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:autoLink="web|email"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="Customer message"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/default_text_size_plus_2" /> -->
         </FrameLayout>
     </LinearLayout>
 
