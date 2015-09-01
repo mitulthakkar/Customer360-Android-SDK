@@ -2,6 +2,7 @@
 <resources>
 
     <string name="app_name">cus360InAppWiget</string>
+    <string name="hello_world">Hello world!</string>
 	<style parent="@android:style/Widget.Spinner" name="SpinnerAsEditText"><item name="android:background">@android:drawable/edit_text</item></style>
 	
 	<string name="powered_by_customer360">Powered by <b>Customer360</b></string>

@@ -2,4 +2,5 @@
 <resources>
     <dimen name="video_call_image_width">32dp</dimen>
     <dimen name="video_call_margin_general">12dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
 </resources>
